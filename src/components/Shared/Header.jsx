@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import img from '../../../public/toyStore.png'
+import banner from '../../../public/Banner.jpg'
 
 const Header = () => {
   return (
     <div>
 
-      {/* Navbar  */}
-      <div className="navbar bg-base-100 mb-20">
+      {/* Navbar --------------------- */}
+      <div className="navbar bg-orange-400 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -58,8 +59,18 @@ const Header = () => {
           <a className="btn">Login</a>
         </div>
       </div>
-
-
+      {/* Banner ----------------------- */}
+      <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto'>
+        <div className=''>
+          <img className='rounded-xl' src={banner} alt="" />
+        </div>
+        <div className='flex items-center'>
+          <div>
+          <h2 className='font-bold text-4xl text-orange-400'>Handle Toy Store</h2>
+          <p className=' font-semibold text-lg'>"Welcome to our Toy Store! Step into a world of imagination and play where joy knows no bounds. Discover a treasure trove of toys that will ignite the imagination of children of all ages. From classic favorites to the latest trends, we offer a wide selection of toys that will bring smiles, laughter, and unforgettable memories. Whether you're searching for the perfect gift, planning a birthday party, or simply indulging in a playful adventure, our Toy Store is your ultimate destination. Come and explore a world of wonder, where dreams come true and imagination takes flight!"</p>
+          </div>
+        </div>
+      </div>
 
     </div>
   );
