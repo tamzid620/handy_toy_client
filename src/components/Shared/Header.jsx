@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import img from '../../../public/toyStore.png'
-import banner from '../../../public/Banner.jpg'
+import banner from '../../../public/starwar.jpg'
 
 const Header = () => {
   return (
@@ -18,9 +18,9 @@ const Header = () => {
               <li tabIndex={0}>
                 <a className="justify-between">
                   Toy Options
-                  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                  <svg className="fill-current bg-orange-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                 </a>
-                <ul className="p-2">
+                <ul className="p-2 ">
                   <li><a><Link to="/alltoys">All Toys</Link></a></li>
                   <li><a><Link to="/mytoys">My Toys</Link></a></li>
                   <li><a><Link to="/addtoys">Add Toys</Link></a></li>
@@ -41,9 +41,9 @@ const Header = () => {
             <li tabIndex={0}>
               <a className="justify-between">
                 Toy Options
-                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+                <svg className="fill-current " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
               </a>
-              <ul className="p-2">
+              <ul className="p-2 bg-orange-400 font-semibold text-white">
                 <li><a><Link to="/alltoys">All Toys</Link></a></li>
                 <li><a><Link to="/mytoys">My Toys</Link></a></li>
                 <li><a><Link to="/addtoys">Add Toys</Link></a></li>
@@ -59,6 +59,7 @@ const Header = () => {
           <a className="btn">Login</a>
         </div>
       </div>
+
       {/* Banner ----------------------- */}
       <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto'>
         <div className=''>

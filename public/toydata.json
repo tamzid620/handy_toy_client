@@ -1,0 +1,185 @@
+{
+    "toys": [
+      {
+        "name": "Lightsaber",
+        "picture": "https://cdn.shopify.com/s/files/1/0532/0792/4900/products/replica-leia-neopixel-saber-on-purple.jpg?v=1667665028&width=900",
+        "price": 29.99,
+        "rating": 4.5,
+        "quantity": 10,
+        "description": "Experience the power of the Force with this iconic lightsaber. It features realistic sound effects and lights up in different colors. Perfect for epic Jedi duels!",
+        "available": true
+      },
+      {
+        "name": "Millennium Falcon",
+        "picture": "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+        "price": 149.99,
+        "rating": 5.0,
+        "quantity": 5,
+        "description": "Take control of the fastest ship in the galaxy! This highly detailed Millennium Falcon replica comes with removable panels, working lights, and sounds. It's a must-have for any Star Wars fan.",
+        "available": true
+      },
+      {
+        "name": "Darth Vader Action Figure",
+        "picture": "https://gazette-eu-west2.azureedge.net/media/26680/1982-vader-2336nedi.jpg",
+        "price": 19.99,
+        "rating": 4.2,
+        "quantity": 8,
+        "description": "Embrace the dark side with this impressive Darth Vader action figure. It features multiple points of articulation, a lightsaber accessory, and a removable helmet. Join the Sith Lord in his quest for power!",
+        "available": true
+      },
+      {
+        "name": "R2-D2 Interactive Droid",
+        "picture": "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/7512057372383-3?fmt=webp&qlt=70&wid=608&hei=608",
+        "price": 79.99,
+        "rating": 4.7,
+        "quantity": 3,
+        "description": "Meet your new astromech droid companion, R2-D2! This interactive droid can move, make sounds, and project holographic messages, just like in the movies. It's a loyal and resourceful ally for any Star Wars adventure.",
+        "available": true
+      },
+      {
+        "name": "X-Wing Fighter Model Kit",
+        "picture": "https://www.kingkit.co.uk/uploads/shop/large/P1250022.JPG",
+        "price": 39.99,
+        "rating": 4.4,
+        "quantity": 6,
+        "description": "Build and display your own X-Wing Fighter with this detailed model kit. It includes all the necessary parts and decals for a stunning replica. May the Force be with you as you embark on this exciting construction project.",
+        "available": true
+      },
+      {
+        "name": "BB-8 App-Enabled Droid",
+        "picture": "https://cdn.shopify.com/s/files/1/0886/0860/products/ori-sphero-drone-bb-8-star-wars-1534_1024x1024.jpg?v=1579560374",
+        "price": 79.99,
+        "rating": 4.6,
+        "quantity": 10,
+        "description": "Bring the lovable BB-8 droid to life with this app-enabled toy. Control it using your smartphone, explore holographic simulations, and embark on exciting missions in a galaxy far, far away.",
+        "available": true
+      },
+      {
+        "name": "Kylo Ren Lightsaber",
+        "picture": "https://cdn.shopify.com/s/files/1/0643/7444/0178/products/kylo-ren-lightsaber-baselit-xenopixel-proffie-1_510x.progressive.jpg?v=1678980203",
+        "price": 39.99,
+        "rating": 4.4,
+        "quantity": 5,
+        "description": "Embrace the power of the dark side with the Kylo Ren Lightsaber. This realistic replica features a pulsating blade, movie-inspired sound effects, and a durable hilt. Join the Knights of Ren and unleash your fury!",
+        "available": true
+      },
+      {
+        "name": "Stormtrooper Helmet",
+        "picture": "https://m.media-amazon.com/images/I/71kJWVXYDZL._AC_SL1500_.jpg",
+        "price": 59.99,
+        "rating": 4.8,
+        "quantity": 8,
+        "description": "Enlist in the Galactic Empire with this authentic Stormtrooper helmet. It features a glossy white finish, adjustable straps, and accurate details. Complete your Stormtrooper cosplay or display it as a collectible!",
+        "available": true
+      },
+      {
+        "name": "The Child Plush Toy",
+        "picture": "https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg",
+        "price": 19.99,
+        "rating": 4.9,
+        "quantity": 15,
+        "description": "Cuddle up with the adorable "Baby Yoda" with this soft and huggable plush toy. Inspired by the character from The Mandalorian series, it's the perfect companion for Star Wars fans of all ages.",
+        "available": true
+      },
+      {
+        "name": "Star Wars LEGO Millennium Falcon",
+        "picture": "https://m.media-amazon.com/images/I/81PhO-kyPuL._AC_SL1500_.jpg",
+        "price": 149.99,
+        "rating": 5.0,
+        "quantity": 3,
+        "description": "Build the iconic Millennium Falcon with this Star Wars LEGO set. It includes minifigures of your favorite characters, realistic details, and removable sections for easy access to the interior. Embark on epic space adventures!",
+        "available": true
+      },
+      {
+        "name": "Darth Vader Electronic Helmet",
+        "picture": "https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F8103_PROD_SW_BL_ELECTRONIC_HELMET_3_155cr_Online_2000SQ_2000x.jpg?v=1662571610",
+        "price": 79.99,
+        "rating": 4.7,
+        "quantity": 10,
+        "description": "Feel the power of the Dark Side with the Darth Vader Electronic Helmet. This replica helmet features realistic sound effects and voice-changing capabilities, allowing you to immerse yourself in the role of the Sith Lord.",
+        "available": true
+      },
+      {
+        "name": "X-Wing Starfighter Drone",
+        "picture": "https://technabob.com/blog/wp-content/uploads/2015/09/air_hogs_millennium_falcon.jpg",
+        "price": 59.99,
+        "rating": 4.5,
+        "quantity": 8,
+        "description": "Pilot your very own X-Wing Starfighter with this remote control drone. Perform aerial stunts, engage in thrilling dogfights, and relive epic moments from the Star Wars saga.",
+        "available": true
+      },
+      {
+        "name": "R2-D2 Interactive Astromech Droid",
+        "picture": "https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg",
+        "price": 129.99,
+        "rating": 4.8,
+        "quantity": 5,
+        "description": "Interact with the most famous astromech droid in the galaxy - R2-D2! This interactive droid responds to voice commands, navigates your home, and even projects holographic messages. It's a must-have for every Star Wars enthusiast.",
+        "available": true
+      },
+      {
+        "name": "Lightsaber Chopsticks Set",
+        "picture": "https://en.kotobukiya.co.jp/wp-content/uploads/2016/07/swlc_yoda_re_main.jpg",
+        "price": 19.99,
+        "rating": 4.2,
+        "quantity": 12,
+        "description": "Dine like a Jedi with this set of Lightsaber Chopsticks. Each chopstick resembles a lightsaber hilt, and they even light up for an immersive dining experience. May the Force be with your every meal!",
+        "available": true
+      },
+      {
+        "name": "Star Wars Monopoly Board Game",
+        "picture": "https://content.instructables.com/FIS/E2D7/JGR233CT/FISE2D7JGR233CT.jpg",
+        "price": 39.99,
+        "rating": 4.6,
+        "quantity": 15,
+        "description": "Embark on a galactic business adventure with the Star Wars Monopoly board game. Buy, sell, and trade iconic Star Wars locations as you compete with other players to dominate the galaxy. May the best mogul win!",
+        "available": true
+      },
+      {
+        "name": "Millennium Falcon LEGO Set",
+        "picture": "https://m.media-amazon.com/images/I/81PhO-kyPuL._AC_SL1500_.jpg",
+        "price": 199.99,
+        "rating": 4.9,
+        "quantity": 5,
+        "description": "Build the legendary Millennium Falcon with this detailed LEGO set. It includes minifigures of Han Solo, Chewbacca, and other iconic characters. Engage in exciting space adventures and recreate your favorite Star Wars scenes.",
+        "available": true
+      },
+      {
+        "name": "Lightsaber Replica Collection",
+        "picture": "https://i.pinimg.com/564x/69/ff/b1/69ffb14beecb9cea097e582aa49bece0.jpg",
+        "price": 299.99,
+        "rating": 4.7,
+        "quantity": 3,
+        "description": "Own a collection of lightsaber replicas from the Star Wars saga. This set includes iconic lightsabers wielded by characters such as Luke Skywalker, Darth Vader, and Rey. Display them proudly and feel the power of the Force.",
+        "available": true
+      },
+      {
+        "name": "Star Wars: The Complete Saga Blu-ray Set",
+        "picture": "https://fardreamersblog.files.wordpress.com/2020/04/star-wars-the-complete-saga-2015.jpg?w=1024",
+        "price": 49.99,
+        "rating": 4.8,
+        "quantity": 10,
+        "description": "Experience the entire Star Wars saga in stunning high-definition with this Blu-ray set. It includes all nine main episodes, along with bonus features and behind-the-scenes footage. Dive into the epic story of a galaxy far, far away.",
+        "available": true
+      },
+      {
+        "name": "BB-9E Sphero App-Enabled Droid",
+        "picture": "https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg",
+        "price": 89.99,
+        "rating": 4.6,
+        "quantity": 8,
+        "description": "Control the sinister BB-9E droid with your smartphone or tablet. This app-enabled droid rolls and interacts just like in the movies. Join the dark side and unleash its power in your own home.",
+        "available": true
+      },
+      {
+        "name": "Star Wars: The Black Series Figures Set",
+        "picture": "https://cdn.ecommercedns.uk/files/1/240241/9/14303369/imagegfgfg.jpg",
+        "price": 79.99,
+        "rating": 4.5,
+        "quantity": 12,
+        "description": "Collect a set of highly detailed Star Wars: The Black Series action figures. This set includes characters such as Luke Skywalker, Princess Leia, and Darth Vader. Display them on your shelf or create epic battles.",
+        "available": true
+      }
+    ]
+  }
+  
