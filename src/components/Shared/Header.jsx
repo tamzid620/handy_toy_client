@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import img from '../../../public/toyStore.png'
-import banner from '../../../public/starwar.jpg'
+
 
 const Header = () => {
   return (
@@ -56,23 +56,9 @@ const Header = () => {
           <div className="w-10 rounded-full me-2">
             <img src={img} />
           </div>
-          <a className="btn">Login</a>
+          <a className="btn"><Link to="/login">Login</Link></a>
         </div>
       </div>
-
-      {/* Banner ----------------------- */}
-      <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto'>
-        <div className=''>
-          <img className='rounded-xl' src={banner} alt="" />
-        </div>
-        <div className='flex items-center'>
-          <div>
-          <h2 className='font-bold text-4xl text-orange-400'>Handle Toy Store</h2>
-          <p className=' font-semibold text-lg'>"Welcome to our Toy Store! Step into a world of imagination and play where joy knows no bounds. Discover a treasure trove of toys that will ignite the imagination of children of all ages. From classic favorites to the latest trends, we offer a wide selection of toys that will bring smiles, laughter, and unforgettable memories. Whether you're searching for the perfect gift, planning a birthday party, or simply indulging in a playful adventure, our Toy Store is your ultimate destination. Come and explore a world of wonder, where dreams come true and imagination takes flight!"</p>
-          </div>
-        </div>
-      </div>
-
     </div>
   );
 };
