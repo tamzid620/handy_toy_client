@@ -2,20 +2,19 @@
 
 const Blog = () => {
     return (
-        <div>
-            <h1></h1>
+        <div className="container mx-auto">
             <div className='mt-20 mb-20'>
-                <h2 className='flex justify-center text-green-400 font-semibold text-7xl mb-10 mt-5'>My<span className='text-black'> Blogs</span> Questions</h2>
+                <h2 className='flex justify-center text-orange-400 font-semibold text-7xl mb-10 mt-5'>My<span className='text-black'> Blogs</span> Questions</h2>
 
                 <div className='text-left'>
-                    <h2 className='font-semibold text-blue-500 text-2xl'>
+                    <h2 className='font-semibold text-orange-500 text-2xl'>
                         1.What is an access token and refresh token? How do they work and where should we store them on the client-side?
                     </h2>
-                    <p className='font-semibold  text-2xl text-red-600'>
+                    <p className='font-semibold  text-2xl text-black'>
                         A:Access Token:
                         An access token is a credential that is used to authenticate and authorize a user or a client application to access protected resources.
                         <br />
-                        When a user or client application successfully authenticates with an authentication server, it receives an access token. The access token is typically a long, randomly generated string or a JSON Web Token (JWT). It contains encoded information about the user's identity and permissions.
+                        When a user or client application successfully authenticates with an authentication server, it receives an access token. The access token is typically a long, randomly generated string or a JSON Web Token (JWT). It contains encoded information about the users identity and permissions.
                         <br />
                         Refresh Token:
                         The refresh token is securely stored on the client-side and is typically kept longer than the access token.
@@ -25,10 +24,10 @@ const Blog = () => {
 
                     <br />
 
-                    <h2 className='font-semibold text-blue-500 text-2xl'>
+                    <h2 className='font-semibold text-orange-500 text-2xl'>
                         2.Compare SQL and NoSQL databases?
                     </h2>
-                    <p className='font-semibold  text-2xl text-red-600'>
+                    <p className='font-semibold  text-2xl text-black'>
                         A: SQL: 1) SQL databases follow a rigid, predefined schema where data is organized into tables with rows and columns.
                         <br />
                         2)SQL databases use a standardized query language called SQL, which provides powerful declarative statements for querying, manipulating, and managing data. SQL offers a rich set of operations like SELECT, INSERT, UPDATE, DELETE, JOIN, and complex aggregations.
@@ -48,10 +47,10 @@ const Blog = () => {
 
                     <br />
 
-                    <h2 className='font-semibold text-blue-500 text-2xl'>
+                    <h2 className='font-semibold text-orange-500 text-2xl'>
                         3.What is express js? What is Nest JS?
                     </h2>
-                    <p className='font-semibold  text-2xl text-red-600'>
+                    <p className='font-semibold  text-2xl text-black'>
                         A: Express js: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
                         <br />
                         Nest js: Nest.js is a progressive, extensible, and highly scalable Node.js framework for building efficient and maintainable server-side applications.
@@ -60,10 +59,10 @@ const Blog = () => {
 
                     <br />
 
-                    <h2 className='font-semibold text-blue-500 text-2xl'>
+                    <h2 className='font-semibold text-orange-500 text-2xl'>
                         4.What is MongoDB aggregate and how does it work ?
                     </h2>
-                    <p className='font-semibold  text-2xl text-red-600'>
+                    <p className='font-semibold  text-2xl text-black'>
                         A:In MongoDB, the aggregate function is a powerful feature that allows you to perform complex data analysis and aggregation operations on your data.
                         <br />
                         1.Pipeline Stages: <br />
