@@ -129,7 +129,7 @@ const Home = () => {
                     Events & Promotions</p>
                 <div className='flex justify-center gap-5'>
                     <input className='border rounded-lg' type="email" name="email"   placeholder='Your email' />
-                    <button className='bg-orange-400 px-5 py-2  font-bold rounded-xl'>Submit</button>
+                    <button className='btn bg-orange-400 px-5 py-2  font-bold rounded-xl'>Submit</button>
                 </div>
             </div>
 
