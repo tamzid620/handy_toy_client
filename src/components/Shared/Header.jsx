@@ -56,7 +56,7 @@ const Header = () => {
           <div className="w-10 rounded-full me-2">
             <img src={img} />
           </div>
-          <a className="btn"><Link to="/login">Login</Link></a>
+          <a className="btn bg-orange-700"><Link to="/login">Login</Link></a>
         </div>
       </div>
     </div>

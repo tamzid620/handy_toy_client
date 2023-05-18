@@ -11,8 +11,8 @@ const Home = () => {
     return (
         <div>
             {/* Banner ----------------------- */}
-            <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto'>
-                <div className=''>
+            <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto bg-orange-200 p-5 rounded-3xl'>
+                <div>
                     <img className='rounded-xl' src={banner} alt="" />
                 </div>
                 <div className='flex items-center'>
@@ -24,7 +24,7 @@ const Home = () => {
             </div>
 
             {/* Our Products  */}
-            
+
 
             {/* OUR LATEST NEWS  */}
             <div className='container mx-auto'>
@@ -119,6 +119,17 @@ const Home = () => {
                             <a href="#slide1" className="btn btn-circle">❯</a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* New Letter  */}
+            <div className='container mx-auto bg-orange-200 rounded-xl p-20'>
+                <h2 className="text-4xl font-bold text-orange-400 flex justify-center">SIGN UP NEWSLETTER</h2>
+                <p className='text-gray-400 flex justify-center text-center mb-3'>Subscribe to get more special Deals, <br />
+                    Events & Promotions</p>
+                <div className='flex justify-center gap-5'>
+                    <input className='border rounded-lg' type="email" name="email"   placeholder='Your email' />
+                    <button className='bg-orange-400 px-5 py-2  font-bold rounded-xl'>Submit</button>
                 </div>
             </div>
 
