@@ -2,8 +2,10 @@ import banner from '../../../public/starwar.jpg'
 import storeCart1 from '../../../public/store1.jpg'
 import storeCart2 from '../../../public/store2.jpg'
 import storeCart3 from '../../../public/store3.jpg'
+import Tab from '../Pages/Tab/Tab';
 
 const Home = () => {
+
     return (
         <div>
             {/* Banner ----------------------- */}
@@ -24,8 +26,10 @@ const Home = () => {
 
             </div>
 
-            {/* Our Products  */}
-
+            {/* shop by  category  */}
+            <div className='mb-20'>
+            <Tab></Tab>
+            </div>
 
             {/* OUR LATEST NEWS  */}
             <div className='container mx-auto'>
@@ -34,26 +38,11 @@ const Home = () => {
                         <h1 className="text-4xl font-bold">OUR LATEST NEWS</h1>
                     </div>
                     <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
-                        <div className="card w-96 bg-base-100 shadow-xl">
-                            <figure><img src={storeCart1} alt="store" /></figure>
-                            <div className="card-body">
-                                <h2 className="card-title">
-                                    Shoes!
-                                    <div className="badge bg-orange-400">NEW</div>
-                                </h2>
-                                <h1 className='font-semibold text-lg'>We bring you the best</h1>
-                                <p className='text-sm text-gray-400'>Not only will you be able to find all your favorite toys, but you’ll also be able to explore the different sections and see what new and exciting toys have come in recently.</p>
-                                <div className="card-actions justify-end">
-                                    <div className="badge badge-outline bg-orange-500 text-white">Toys</div>
-                                    <div className="badge badge-outline bg-black text-gray-300">Products</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-96 bg-base-100 shadow-xl">
                             <figure><img src={storeCart2} alt="store" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
-                                    Shoes!
+                                Good News!
                                     <div className="badge bg-orange-400">NEW</div>
                                 </h2>
                                 <h1 className='font-semibold text-lg'>We design functional Toys</h1>
@@ -65,10 +54,25 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="card w-96 bg-base-100 shadow-xl">
+                            <figure><img src={storeCart1} alt="store" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">
+                                    Good News!
+                                    <div className="badge bg-orange-400">NEW</div>
+                                </h2>
+                                <h1 className='font-semibold text-lg'>We bring you the best</h1>
+                                <p className='text-sm text-gray-400'>Not only will you be able to find all your favorite toys, but you’ll also be able to explore the different sections and see what new and exciting toys have come in recently.</p>
+                                <div className="card-actions justify-end">
+                                    <div className="badge badge-outline bg-orange-500 text-white">Toys</div>
+                                    <div className="badge badge-outline bg-black text-gray-300">Products</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card w-96 bg-base-100 shadow-xl">
                             <figure><img src={storeCart3} alt="store" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
-                                    Shoes!
+                                Good News!
                                     <div className="badge bg-orange-400">NEW</div>
                                 </h2>
                                 <h1 className='font-semibold text-lg'>We know that buying shop</h1>
@@ -84,22 +88,8 @@ const Home = () => {
             </div>
 
             {/* Our Gallery  */}
-            <div className=' mt-20'>
-            <h1 className="text-4xl font-bold flex justify-center text-orange-400 mb-5">OUR GALLERY</h1>
-                <div className='flex justify-center gap-5 mb-5'>
-                    <div>
-                        <img style={{ width: "250px", height: "250px" }} src="https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1/jpg" alt="" />
-                    </div>
-                    <div>
-                        <img style={{ width: "250px", height: "250px" }} src="https://cdn.shopify.com/s/files/1/0886/0860/products/ori-sphero-drone-bb-8-star-wars-1534_1024x1024.jpg?v=1579560374.jpg" alt="" />
-                    </div>
-                    <div>
-                        <img style={{ width: "250px", height: "250px" }} src="https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg" alt="" />
-                    </div>
-                    <div>
-                        <img style={{ width: "250px", height: "250px" }} src="https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg" alt="" />
-                    </div>
-                </div>
+            <div className=' mt-20 mb-20'>
+                <h1 className="text-4xl font-bold flex justify-center text-orange-400 mb-5">OUR SPECIAL GALLERY</h1>
                 <div className='flex justify-center gap-5 mb-5'>
                     <div>
                         <img style={{ width: "250px", height: "250px" }} src="https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg" alt="" />
@@ -122,10 +112,24 @@ const Home = () => {
                         <img style={{ width: "250px", height: "250px" }} src="https://cdn.shopify.com/s/files/1/0886/0860/products/ori-sphero-drone-bb-8-star-wars-1534_1024x1024.jpg?v=1579560374.jpg" alt="" />
                     </div>
                     <div>
-                        <img style={{ width: "250px", height: "250px" }} src="https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg" alt="" />
+                        <img style={{ width: "250px", height: "250px" }} src="https://m.media-amazon.com/images/I/71kJWVXYDZL._AC_SL1500_.jpg" alt="" />
                     </div>
                     <div>
                         <img style={{ width: "250px", height: "250px" }} src="https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg" alt="" />
+                    </div>
+                </div>
+                <div className='flex justify-center gap-5 mb-5'>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://m.media-amazon.com/images/I/81PhO-kyPuL._AC_SL1500_.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F8103_PROD_SW_BL_ELECTRONIC_HELMET_3_155cr_Online_2000SQ_2000x.jpg?v=1662571610.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://en.kotobukiya.co.jp/wp-content/uploads/2016/07/swlc_yoda_re_main.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://content.instructables.com/FIS/E2D7/JGR233CT/FISE2D7JGR233CT.jpg" alt="" />
                     </div>
                 </div>
             </div>
