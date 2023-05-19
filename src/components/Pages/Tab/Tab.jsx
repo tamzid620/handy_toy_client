@@ -1,3 +1,4 @@
+import Rating from 'react-rating';
 import './Tab.css'
 import { useEffect, useState } from 'react';
 
@@ -52,7 +53,14 @@ const Tab = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {categories[0]?.name}</h2>
                                         <p>• Price: {categories[0]?.price}</p>
-                                        <p>• Rating: {categories[0]?.rating}</p>
+                                        <p>• Rating: {categories[0]?.rating}
+                                            <Rating
+                                                placeholderRating={3.5}
+                                                emptySymbol={<img src="assets/images/star-grey.png" className="icon" />}
+                                                placeholderSymbol={<img src="assets/images/star-red.png" className="icon" />}
+                                                fullSymbol={<img src="assets/images/star-yellow.png" className="icon" />} readonly
+                                            />
+                                        </p>
                                         <div className="card-actions justify-end">
                                             <button className="btn btn-primary">view details</button>
                                         </div>
