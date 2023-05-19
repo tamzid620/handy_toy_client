@@ -8,7 +8,6 @@ import Register from "../Pages/Register";
 import AllToys from "../Pages/AllToys";
 import MyToys from "../Pages/MyToys";
 import AddToys from "../Pages/AddToys";
-import Tab from "../Pages/Tab/Tab";
 
 
   const router = createBrowserRouter([

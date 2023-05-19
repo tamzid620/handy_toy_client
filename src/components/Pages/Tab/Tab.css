@@ -8,10 +8,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 100vh;
     background: #f1f1f1;
-    margin: 100px auto 0;
+    margin: 20px auto 0;
     word-break: break-all;
     border: 1px solid rgba(0, 0, 0, 0.274);
   }
@@ -58,11 +58,14 @@
     border: none;
     
   }
-  .content-tabs {
+ .content-tabs {
     flex-grow : 1;
-  }
+    width: max-content;
+    height: 500px;
+    border-radius: 10px;
+  } 
   .content {
-    background: white;
+    background: white; 
     padding: 20px;
     width: 100%;
     height: 100%;

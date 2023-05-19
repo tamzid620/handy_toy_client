@@ -1,6 +1,7 @@
 [
   {
     "toy_id":"01",
+    "seller": "Tamzid",
     "name": "Lightsaber",
     "picture": "https://cdn.shopify.com/s/files/1/0532/0792/4900/products/replica-leia-neopixel-saber-on-purple.jpg?v=1667665028&width=900.jpg",
     "price": 29.99,
@@ -11,6 +12,7 @@
   },
   {
     "toy_id":"02",
+    "seller": "Tamzid",
     "name": "Millennium Falcon",
     "picture": "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     "price": 149.99,
@@ -21,6 +23,7 @@
   },
   {
     "toy_id":"03",
+    "seller": "Tamzid",
     "name": "Darth Vader Action Figure",
     "picture": "https://gazette-eu-west2.azureedge.net/media/26680/1982-vader-2336nedi.jpg",
     "price": 19.99,
@@ -31,6 +34,7 @@
   },
   {
     "toy_id":"04",
+    "seller": "Tamzid",
     "name": "R2-D2 Interactive Droid",
     "picture": "https://cdn.shopify.com/s/files/1/0886/0860/products/ori-sphero-drone-bb-8-star-wars-1534_1024x1024.jpg?v=1579560374.jpg",
     "price": 79.99,
@@ -41,6 +45,7 @@
   },
   {
     "toy_id":"05",
+    "seller": "Tamzid",
     "name": "X-Wing Fighter Model Kit",
     "picture": "https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg",
     "price": 39.99,
@@ -51,6 +56,7 @@
   },
   {
     "toy_id":"06",
+    "seller": "Tamzid",
     "name": "BB-8 App-Enabled Droid",
     "picture": "https://cdn.shopify.com/s/files/1/0886/0860/products/ori-sphero-drone-bb-8-star-wars-1534_1024x1024.jpg?v=1579560374.jpg",
     "price": 79.99,
@@ -61,6 +67,7 @@
   },
   {
     "toy_id":"07",
+    "seller": "Tamzid",
     "name": "Kylo Ren Lightsaber",
     "picture": "https://cdn.shopify.com/s/files/1/0643/7444/0178/products/kylo-ren-lightsaber-baselit-xenopixel-proffie-1_510x.progressive.jpg?v=1678980203.jpg",
     "price": 39.99,
@@ -71,6 +78,7 @@
   },
   {
     "toy_id":"08",
+    "seller": "Tamzid",
     "name": "Stormtrooper Helmet",
     "picture": "https://m.media-amazon.com/images/I/71kJWVXYDZL._AC_SL1500_.jpg",
     "price": 59.99,
@@ -81,6 +89,7 @@
   },
   {
     "toy_id":"09",
+    "seller": "Tamzid",
     "name": "The Child Plush Toy",
     "picture": "https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg",
     "price": 19.99,
@@ -91,6 +100,7 @@
   },
   {
     "toy_id":"10",
+    "seller": "Tamzid",
     "name": "Star Wars LEGO Millennium Falcon",
     "picture": "https://m.media-amazon.com/images/I/81PhO-kyPuL._AC_SL1500_.jpg",
     "price": 149.99,
@@ -101,6 +111,7 @@
   },
   {
     "toy_id":"11",
+    "seller": "Tamzid",
     "name": "Darth Vader Electronic Helmet",
     "picture": "https://cdn.shopify.com/s/files/1/0169/6995/7440/products/F8103_PROD_SW_BL_ELECTRONIC_HELMET_3_155cr_Online_2000SQ_2000x.jpg?v=1662571610.jpg",
     "price": 79.99,
@@ -111,6 +122,7 @@
   },
   {
     "toy_id":"12",
+    "seller": "Tamzid",
     "name": "X-Wing Starfighter Drone",
     "picture": "https://technabob.com/blog/wp-content/uploads/2015/09/air_hogs_millennium_falcon.jpg",
     "price": 59.99,
@@ -121,6 +133,7 @@
   },
   {
     "toy_id":"13",
+    "seller": "Tamzid",
     "name": "R2-D2 Interactive Astromech Droid",
     "picture": "https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg",
     "price": 129.99,
@@ -131,6 +144,7 @@
   },
   {
     "toy_id":"14",
+    "seller": "Tamzid",
     "name": "Lightsaber Chopsticks Set",
     "picture": "https://en.kotobukiya.co.jp/wp-content/uploads/2016/07/swlc_yoda_re_main.jpg",
     "price": 19.99,
@@ -141,6 +155,7 @@
   },
   {
     "toy_id":"15",
+    "seller": "Tamzid",
     "name": "Star Wars Monopoly Board Game",
     "picture": "https://content.instructables.com/FIS/E2D7/JGR233CT/FISE2D7JGR233CT.jpg",
     "price": 39.99,
@@ -151,6 +166,7 @@
   },
   {
     "toy_id":"16",
+    "seller": "Tamzid",
     "name": "Millennium Falcon LEGO Set",
     "picture": "https://m.media-amazon.com/images/I/81PhO-kyPuL._AC_SL1500_.jpg",
     "price": 199.99,
@@ -161,6 +177,7 @@
   },
   {
     "toy_id":"17",
+    "seller": "Tamzid",
     "name": "Lightsaber Replica Collection",
     "picture": "https://i.pinimg.com/564x/69/ff/b1/69ffb14beecb9cea097e582aa49bece0.jpg",
     "price": 299.99,
@@ -171,6 +188,7 @@
   },
   {
     "toy_id":"18",
+    "seller": "Tamzid",
     "name": "Star Wars: The Complete Saga Blu-ray Set",
     "picture": "https://fardreamersblog.files.wordpress.com/2020/04/star-wars-the-complete-saga-2015.jpg?w=1024.jpg",
     "price": 49.99,
@@ -181,6 +199,7 @@
   },
   {
     "toy_id":"19",
+    "seller": "Tamzid",
     "name": "BB-9E Sphero App-Enabled Droid",
     "picture": "https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg",
     "price": 89.99,
@@ -191,6 +210,7 @@
   },
   {
     "toy_id":"20",
+    "seller": "Tamzid",
     "name": "Star Wars: The Black Series Figures Set",
     "picture": "https://cdn.ecommercedns.uk/files/1/240241/9/14303369/imagegfgfg.jpg",
     "price": 79.99,
