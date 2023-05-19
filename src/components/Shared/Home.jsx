@@ -83,6 +83,53 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* Our Gallery  */}
+            <div className=' mt-20'>
+            <h1 className="text-4xl font-bold flex justify-center text-orange-400 mb-5">OUR GALLERY</h1>
+                <div className='flex justify-center gap-5 mb-5'>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1/jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://cdn.shopify.com/s/files/1/0886/0860/products/ori-sphero-drone-bb-8-star-wars-1534_1024x1024.jpg?v=1579560374.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg" alt="" />
+                    </div>
+                </div>
+                <div className='flex justify-center gap-5 mb-5'>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://technabob.com/blog/wp-content/uploads/2015/09/air_hogs_millennium_falcon.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://cdn.shopify.com/s/files/1/0643/7444/0178/products/kylo-ren-lightsaber-baselit-xenopixel-proffie-1_510x.progressive.jpg?v=1678980203.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://cdn.ecommercedns.uk/files/1/240241/9/14303369/imagegfgfg.jpg" alt="" />
+                    </div>
+                </div>
+                <div className='flex justify-center gap-5 mb-5'>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1/jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://cdn.shopify.com/s/files/1/0886/0860/products/ori-sphero-drone-bb-8-star-wars-1534_1024x1024.jpg?v=1579560374.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://i5.walmartimages.ca/images/Large/710/008/6000201710008.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img style={{ width: "250px", height: "250px" }} src="https://1.bp.blogspot.com/-R9O3LyDGvFs/X2JbUnhR_iI/AAAAAAAALFk/PMTpkS9ZKxkN3p7dHp339kzPz0PshlqMACLcBGAsYHQ/s1600/2736ge-r2-r5-astromech-red-white.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
             {/* About ----------------------- */}
             <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto bg-orange-200 p-5 rounded-3xl'>
                 <div>
