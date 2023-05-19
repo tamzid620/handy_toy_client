@@ -4,13 +4,13 @@ const Blog = () => {
     return (
         <div className="container mx-auto">
             <div className='mt-20 mb-20'>
-                <h2 className='flex justify-center text-orange-400 font-semibold text-7xl mb-10 mt-5'>My<span className='text-black'> Blogs</span> Questions</h2>
+                <h2 className='flex justify-center text-orange-400 font-semibold text-7xl mb-10 mt-5'>My <span className='text-white'> Blogs </span> Questions</h2>
 
                 <div className='text-left'>
                     <h2 className='font-semibold text-orange-500 text-2xl'>
                         1.What is an access token and refresh token? How do they work and where should we store them on the client-side?
                     </h2>
-                    <p className='font-semibold  text-2xl text-black'>
+                    <p className='font-semibold  text-2xl text-white'>
                         A:Access Token:
                         An access token is a credential that is used to authenticate and authorize a user or a client application to access protected resources.
                         <br />
@@ -27,7 +27,7 @@ const Blog = () => {
                     <h2 className='font-semibold text-orange-500 text-2xl'>
                         2.Compare SQL and NoSQL databases?
                     </h2>
-                    <p className='font-semibold  text-2xl text-black'>
+                    <p className='font-semibold  text-2xl text-white'>
                         A: SQL: 1) SQL databases follow a rigid, predefined schema where data is organized into tables with rows and columns.
                         <br />
                         2)SQL databases use a standardized query language called SQL, which provides powerful declarative statements for querying, manipulating, and managing data. SQL offers a rich set of operations like SELECT, INSERT, UPDATE, DELETE, JOIN, and complex aggregations.
@@ -50,7 +50,7 @@ const Blog = () => {
                     <h2 className='font-semibold text-orange-500 text-2xl'>
                         3.What is express js? What is Nest JS?
                     </h2>
-                    <p className='font-semibold  text-2xl text-black'>
+                    <p className='font-semibold  text-2xl text-white'>
                         A: Express js: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
                         <br />
                         Nest js: Nest.js is a progressive, extensible, and highly scalable Node.js framework for building efficient and maintainable server-side applications.
@@ -62,7 +62,7 @@ const Blog = () => {
                     <h2 className='font-semibold text-orange-500 text-2xl'>
                         4.What is MongoDB aggregate and how does it work ?
                     </h2>
-                    <p className='font-semibold  text-2xl text-black'>
+                    <p className='font-semibold  text-2xl text-white'>
                         A:In MongoDB, the aggregate function is a powerful feature that allows you to perform complex data analysis and aggregation operations on your data.
                         <br />
                         1.Pipeline Stages: <br />
