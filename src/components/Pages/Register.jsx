@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, updateProfile, } from "firebase/auth";
-import { ToastContainer, toast } from "react-toastify";
+
 
 const auth = getAuth();
 
@@ -31,10 +31,6 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (email && password) {
-            if (password.length < 6) {
-                toast("Need More Password Character");
-                return;
-            }
             console.log(email, password);
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
@@ -47,15 +43,15 @@ const Register = () => {
                         .then(() => { })
                         .catch((error) => {
                             console.log(error.message);
+                            alert("account registratiaon successfully ");
                         });
                 })
                 .catch((error) => {
-                    console.log(error);
                     const errorCode = error.code;
                     const errorMessage = error.message;
-                });
+                  });
         } else {
-            toast("Please Fill Email Field And Password");
+            alert("Please Fill Email Field And Password");
             return;
         }
     };
@@ -69,7 +65,7 @@ const Register = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label htmlFor="name" className="block mb-2 font-medium"> Name</label>
-                            <input type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your name" value={name} onChange={handleNameChange} required/>
+                            <input type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your name" value={name} onChange={handleNameChange} required />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="email" className="block mb-2 font-medium"> Email </label>
@@ -83,7 +79,7 @@ const Register = () => {
                             <input
                                 type="password"
                                 id="password"
-                                name = "password"
+                                name="password"
                                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
                                 placeholder="your password" value={password} onChange={handlePasswordChange} required
                             />
@@ -112,7 +108,6 @@ const Register = () => {
                     </form>
                 </div>
             </div>
-            <ToastContainer />
         </div>
     );
 };

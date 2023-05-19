@@ -6,14 +6,14 @@ const AllToys = () => {
     const [alltoys, setAlltoys] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/toys')
+        fetch('http://localhost:5000/allToys')
             .then(res => res.json())
             .then(data => setAlltoys(data))
     }, [])
 
     return (
         <div>
-            <h2 className=" text-center font-semibold text-3xl text-orange-400 mt-10 mb-10  "> ALL TOYS</h2>
+            <h2 className=" text-center font-semibold text-3xl text-orange-400 mt-10 mb-20  "> ALL TOYS</h2>
             <div className="container mx-auto">
                 <div className="overflow-x-auto">
                     <table className="table table-zebra w-full">
@@ -25,8 +25,7 @@ const AllToys = () => {
                                 <th>Toy Name</th>
                                 <th>Price</th>
                                 <th>Avaiablle Quantity</th>
-                                <th>Action</th>
-                                <th>Action</th>
+                                <th>Details</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -39,10 +38,7 @@ const AllToys = () => {
                                         <td>{alltoy?.price}$</td>
                                         <td>{alltoy?.quantity} pieces</td>
                                         <td>
-                                            <button className="btn bg-orange-500 rounded-lg text-white font-bold">Update</button>
-                                        </td>
-                                        <td>
-                                            <button className="btn bg-orange-500 rounded-lg text-white font-bold">Delete</button>
+                                            <button className="btn bg-orange-500 rounded-lg text-white font-bold">view Details</button>
                                         </td>
                                     </tr>
                                 ))
