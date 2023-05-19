@@ -29,7 +29,6 @@ const Login = () => {
   useEffect(() => {
     if (app) {
       onAuthStateChanged(auth, (user) => {
-        console.log(user);
       });
     }
   }, [app]);

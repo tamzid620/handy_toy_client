@@ -25,7 +25,7 @@ const Home = () => {
             </div>
 
             {/* Our Products  */}
-            
+
 
             {/* OUR LATEST NEWS  */}
             <div className='container mx-auto'>
@@ -33,8 +33,7 @@ const Home = () => {
                     <div className="flex justify-center text-orange-400 mb-10">
                         <h1 className="text-4xl font-bold">OUR LATEST NEWS</h1>
                     </div>
-
-                    <div className='grid md:grid-cols-3 sm:grid-cols-1'>
+                    <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
                         <div className="card w-96 bg-base-100 shadow-xl">
                             <figure><img src={storeCart1} alt="store" /></figure>
                             <div className="card-body">
@@ -81,7 +80,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 

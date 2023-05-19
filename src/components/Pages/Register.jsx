@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, updateProfile, } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 
 const auth = getAuth();
@@ -32,7 +32,7 @@ const Register = () => {
         event.preventDefault();
         if (email && password) {
             if (password.length < 6) {
-                toast("Please Add More Password");
+                toast("Need More Password Character");
                 return;
             }
             console.log(email, password);
@@ -42,13 +42,12 @@ const Register = () => {
                     console.log(user, userCredential);
                     updateProfile(auth.currentUser, {
                         displayName: name,
-                        photoURL: photoUrl,
+                        photoUrL: photoUrl,
                     })
                         .then(() => { })
                         .catch((error) => {
                             console.log(error.message);
                         });
-                    // ...
                 })
                 .catch((error) => {
                     console.log(error);
@@ -69,17 +68,12 @@ const Register = () => {
                     <h2 className="text-2xl font-bold mb-6">Register</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
-                            <label htmlFor="email" className="block mb-2 font-medium">
-                                Email
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
-                                placeholder=" your email"
-                                value={email}
-                                onChange={handleEmailChange}
-                                required
+                            <label htmlFor="name" className="block mb-2 font-medium"> Name</label>
+                            <input type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your name" value={name} onChange={handleNameChange} required/>
+                        </div>
+                        <div className="mb-4">
+                            <label htmlFor="email" className="block mb-2 font-medium"> Email </label>
+                            <input type="email" id="email" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your email" value={email} onChange={handleEmailChange} required
                             />
                         </div>
                         <div className="mb-4">
@@ -89,11 +83,21 @@ const Register = () => {
                             <input
                                 type="password"
                                 id="password"
+                                name = "password"
                                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
-                                placeholder="your password"
-                                value={password}
-                                onChange={handlePasswordChange}
-                                required
+                                placeholder="your password" value={password} onChange={handlePasswordChange} required
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label htmlFor="photoUrl" className="block mb-2 font-medium">
+                                PhotoUrl
+                            </label>
+                            <input
+                                type="text"
+                                id="photoUrl"
+                                name="photoUrl"
+                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                placeholder="your photo link" value={photoUrl} onChange={handlePhotoUrlChange} required
                             />
                         </div>
                         <button type="submit" className="w-full font-bold bg-orange-500 text-white rounded-lg py-2 px-4 hover:bg-orange-600 transition duration-300 mb-5" >
