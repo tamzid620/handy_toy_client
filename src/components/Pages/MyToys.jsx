@@ -30,7 +30,8 @@ const MyToys = () => {
                                 <th>Toy Name</th>
                                 <th>Price</th>
                                 <th>Avaiablle Quantity</th>
-                                <th>Details</th>
+                                <th>Action</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,7 +44,10 @@ const MyToys = () => {
                                         <td>{mytoy?.price}$</td>
                                         <td>{mytoy?.quantity} pieces</td>
                                         <td>
-                                            <button className="btn bg-orange-500 rounded-lg text-white font-bold">view Details</button>
+                                            <button className="btn bg-orange-500 rounded-lg text-white font-bold">Update</button>
+                                        </td>
+                                        <td>
+                                            <button className="btn bg-orange-500 rounded-lg text-white font-bold">Delete</button>
                                         </td>
                                     </tr>
                                 ))

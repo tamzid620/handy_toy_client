@@ -4,6 +4,7 @@ import Rating from "react-rating";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Tab = () => {
     // const {id, picture, name , price , rating} = category;
@@ -59,9 +60,9 @@ const Tab = () => {
                                         <p>• Rating: {categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
-                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" />}
-                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" />}
-                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" />}
+                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
+                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
+                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'yellow' }} />}
                                                 readonly
                                             />
                                         </p>
@@ -75,7 +76,16 @@ const Tab = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {categories[1]?.name}</h2>
                                         <p>• Price: {categories[1]?.price}</p>
-                                        <p>• Rating: {categories[1]?.rating}</p>
+                                        <p>• Rating: {categories[1]?.rating}
+                                        <Rating
+                                                placeholderRating={3.5}
+                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
+                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
+                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'yellow' }} />}
+                                                readonly
+                                            />
+                                        </p>
+                                        
                                         <div className="card-actions justify-end">
                                             <button className="btn btn-primary">view details</button>
                                         </div>
@@ -95,7 +105,15 @@ const Tab = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {categories[2]?.name}</h2>
                                         <p>• Price: {categories[2]?.price}</p>
-                                        <p>• Rating: {categories[2]?.rating}</p>
+                                        <p>• Rating: {categories[2]?.rating}
+                                        <Rating
+                                                placeholderRating={3.5}
+                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
+                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
+                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'yellow' }} />}
+                                                readonly
+                                            />
+                                        </p>
                                         <div className="card-actions justify-end">
                                             <button className="btn btn-primary">view details</button>
                                         </div>
@@ -106,7 +124,15 @@ const Tab = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {categories[3]?.name}</h2>
                                         <p>• Price: {categories[3]?.price}</p>
-                                        <p>• Rating: {categories[3]?.rating}</p>
+                                        <p>• Rating: {categories[3]?.rating}
+                                        <Rating
+                                                placeholderRating={3.5}
+                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
+                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
+                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'yellow' }} />}
+                                                readonly
+                                            />
+                                        </p>
                                         <div className="card-actions justify-end">
                                             <button className="btn btn-primary">view details</button>
                                         </div>
@@ -126,7 +152,15 @@ const Tab = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {categories[4]?.name}</h2>
                                         <p>• Price: {categories[4]?.price}</p>
-                                        <p>• Rating: {categories[4]?.rating}</p>
+                                        <p>• Rating: {categories[4]?.rating}
+                                        <Rating
+                                                placeholderRating={3.5}
+                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
+                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
+                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'yellow' }} />}
+                                                readonly
+                                            />
+                                        </p>
                                         <div className="card-actions justify-end">
                                             <button className="btn btn-primary">view details</button>
                                         </div>
@@ -137,9 +171,18 @@ const Tab = () => {
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {categories[5]?.name}</h2>
                                         <p>• Price: {categories[5]?.price}</p>
-                                        <p>• Rating: {categories[5]?.rating}</p>
+                                        <p>• Rating: {categories[5]?.rating}
+                                        <Rating
+                                                placeholderRating={3.5}
+                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
+                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
+                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'yellow' }} />}
+                                                readonly
+                                            />
+                                        </p>
                                         <div className="card-actions justify-end">
-                                            <button className="btn btn-primary">view details</button>
+                                            {/* <Link to={}></Link> */}
+                                            <button className="btn bg-orange-500">view details</button>
                                         </div>
                                     </div>
                                 </div>
