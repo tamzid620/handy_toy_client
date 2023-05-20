@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link , useLocation, useNavigate,  } from "react-router-dom";
+import { Link, useLocation, useNavigate, } from "react-router-dom";
 import { FaGoogle } from 'react-icons/fa';
-import app from "../../firebase/firebase.config";
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
+import app from "../../firebase/firebase.config";
 
 const auth = getAuth();
 const googleProvider = new GoogleAuthProvider();
@@ -12,9 +12,10 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const navigate = useNavigate();
   const location = useLocation();
+  console.log(location);
+
   const from = location.state?.from?.pathname || "/";
 
   //  Form Handler----------------------------------
@@ -112,14 +113,14 @@ const Login = () => {
           {/* google sign button  */}
           <button
             type="submit" className="w-full bg-blue-500 text-white rounded-md py-2 font-bold flex items-center justify-center" onClick={() => googleLogin()}>
-          <FaGoogle className="me-3 text-orange-500" />  Google Sign-in
+            <FaGoogle className="me-3 text-orange-500" />  Google Sign-in
           </button>
           {/* register related section  */}
-            <div className="text-sm mt-3">
-              <Link to="/register" className="font-medium text-gray-900 hover:text-gray-700">
-                Create an account
-              </Link>
-            </div>
+          <div className="text-sm mt-3">
+            <Link to="/register" className="font-medium text-gray-900 hover:text-gray-700">
+              Create an account
+            </Link>
+          </div>
         </div>
       </div>
       <ToastContainer />

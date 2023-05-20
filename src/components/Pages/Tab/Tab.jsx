@@ -1,6 +1,9 @@
-import Rating from 'react-rating';
 import './Tab.css'
 import { useEffect, useState } from 'react';
+import Rating from "react-rating";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 
 const Tab = () => {
     // const {id, picture, name , price , rating} = category;
@@ -56,9 +59,10 @@ const Tab = () => {
                                         <p>• Rating: {categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
-                                                emptySymbol={<img src="assets/images/star-grey.png" className="icon" />}
-                                                placeholderSymbol={<img src="assets/images/star-red.png" className="icon" />}
-                                                fullSymbol={<img src="assets/images/star-yellow.png" className="icon" />} readonly
+                                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" />}
+                                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" />}
+                                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" />}
+                                                readonly
                                             />
                                         </p>
                                         <div className="card-actions justify-end">
