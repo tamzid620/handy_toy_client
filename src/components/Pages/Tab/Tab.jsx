@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 
 const Tab = (id) => {
     const [toggleState, setToggleState] = useState(1);
-    const [categories, setCategories] = useState([]);
+    const [subcategories, setSubcategories] = useState([]);
 
     useEffect(() => {
-        fetch('category.json')
+        fetch('http://localhost:5000/allToys')
             .then(res => res.json())
-            .then(data => setCategories(data))
+            .then(data => setSubcategories(data))
     }, [])
 
     const toggleTab = (index) => {
@@ -25,7 +25,7 @@ const Tab = (id) => {
             <h1 className="text-4xl font-bold flex justify-center text-orange-500">SHOP BY CATEGORY</h1>
             <div className="tabContainer">
 
-                <div className="bloc-tabs">
+                <div className="block-tabs">
                     <button
                         className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(1)}
@@ -52,11 +52,11 @@ const Tab = (id) => {
                         <div className='flex justify-center'>
                             <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl">
-                                    <figure><img style={{ width: "300px", height: "250px" }} src={categories[0]?.picture} alt="Shoes" /></figure>
+                                    <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[0]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title">• Item name: {categories[0]?.name}</h2>
-                                        <p>• Price: {categories[0]?.price}</p>
-                                        <p>• Rating: {categories[0]?.rating}
+                                        <h2 className="card-title">• Item name: {subcategories[0]?.categories[0]?.name}</h2> 
+                                        <p>• Price: {subcategories[0]?.categories[0]?.price}</p>
+                                        <p>• Rating: {subcategories[0]?.categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
@@ -72,11 +72,11 @@ const Tab = (id) => {
                                     </div>
                                 </div>
                                 <div className="card w-96 bg-base-100 shadow-xl">
-                                    <figure><img style={{ width: "300px", height: "250px" }} src={categories[1]?.picture} alt="Shoes" /></figure>
+                                    <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[1]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title">• Item name: {categories[1]?.name}</h2>
-                                        <p>• Price: {categories[1]?.price}</p>
-                                        <p>• Rating: {categories[1]?.rating}
+                                        <h2 className="card-title">• Item name: {subcategories[1]?.categories[0]?.name}</h2>
+                                        <p>• Price: {subcategories[1]?.categories[0]?.price}</p>
+                                        <p>• Rating: {subcategories[1]?.categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
@@ -102,11 +102,11 @@ const Tab = (id) => {
                         <div className='flex justify-center'>
                             <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl">
-                                    <figure><img style={{ width: "300px", height: "250px" }} src={categories[2]?.picture} alt="Shoes" /></figure>
+                                    <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[2]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title">• Item name: {categories[2]?.name}</h2>
-                                        <p>• Price: {categories[2]?.price}</p>
-                                        <p>• Rating: {categories[2]?.rating}
+                                        <h2 className="card-title">• Item name: {subcategories[2]?.categories[0]?.name}</h2>
+                                        <p>• Price: {subcategories[2]?.categories[0]?.price}</p>
+                                        <p>• Rating: {subcategories[2]?.categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
@@ -122,11 +122,11 @@ const Tab = (id) => {
                                     </div>
                                 </div>
                                 <div className="card w-96 bg-base-100 shadow-xl">
-                                    <figure><img style={{ width: "300px", height: "250px" }} src={categories[3]?.picture} alt="Shoes" /></figure>
+                                    <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[3]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title">• Item name: {categories[3]?.name}</h2>
-                                        <p>• Price: {categories[3]?.price}</p>
-                                        <p>• Rating: {categories[3]?.rating}
+                                        <h2 className="card-title">• Item name: {subcategories[3]?.categories[0]?.name}</h2>
+                                        <p>• Price: {subcategories[3]?.categories[0]?.price}</p>
+                                        <p>• Rating: {subcategories[3]?.categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
@@ -151,11 +151,11 @@ const Tab = (id) => {
                         <div className='flex justify-center'>
                             <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl mb-10">
-                                    <figure><img style={{ width: "300px", height: "250px" }} src={categories[4]?.picture} alt="Shoes" /></figure>
+                                    <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[4]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title">• Item name: {categories[4]?.name}</h2>
-                                        <p>• Price: {categories[4]?.price}</p>
-                                        <p>• Rating: {categories[4]?.rating}
+                                        <h2 className="card-title">• Item name: {subcategories[4]?.categories[0]?.name}</h2>
+                                        <p>• Price: {subcategories[4]?.categories[0]?.price}</p>
+                                        <p>• Rating: {subcategories[4]?.categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
@@ -171,11 +171,11 @@ const Tab = (id) => {
                                     </div>
                                 </div>
                                 <div className="card w-96 bg-base-100 shadow-xl">
-                                    <figure><img style={{ width: "300px", height: "250px" }} src={categories[5]?.picture} alt="Shoes" /></figure>
+                                    <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[5]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title">• Item name: {categories[5]?.name}</h2>
-                                        <p>• Price: {categories[5]?.price}</p>
-                                        <p>• Rating: {categories[5]?.rating}
+                                        <h2 className="card-title">• Item name: {subcategories[5]?.categories[0]?.name}</h2>
+                                        <p>• Price: {subcategories[5]?.categories[0]?.price}</p>
+                                        <p>• Rating: {subcategories[5]?.categories[0]?.rating}
                                             <Rating
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, updateProfile, } from "firebase/auth";
 
@@ -7,29 +6,18 @@ const auth = getAuth();
 
 const Register = () => {
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [photoUrl, setPhotoUrl] = useState("");
-
-    const handleNameChange = (event) => {
-        setName(event.target.value);
-    };
-
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
-    };
-
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value);
-    };
-
-    const handlePhotoUrlChange = (event) => {
-        setPhotoUrl(event.target.value);
-    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        const photoUrl = form.photoUrl.value;
+        console.log(email, password);
+
+
         if (email && password) {
             console.log(email, password);
             createUserWithEmailAndPassword(auth, email, password)
@@ -49,7 +37,7 @@ const Register = () => {
                 .catch((error) => {
                     const errorCode = error.code;
                     const errorMessage = error.message;
-                  });
+                });
         } else {
             alert("Please Fill Email Field And Password");
             return;
@@ -65,11 +53,11 @@ const Register = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label htmlFor="name" className="block mb-2 font-medium"> Name</label>
-                            <input type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your name" value={name} onChange={handleNameChange} required />
+                            <input type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your name" name="name" required />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="email" className="block mb-2 font-medium"> Email </label>
-                            <input type="email" id="email" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your email" value={email} onChange={handleEmailChange} required
+                            <input type="email" id="email" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder=" your email" name="email"  required
                             />
                         </div>
                         <div className="mb-4">
@@ -81,7 +69,7 @@ const Register = () => {
                                 id="password"
                                 name="password"
                                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
-                                placeholder="your password" value={password} onChange={handlePasswordChange} required
+                                placeholder="your password"  required
                             />
                         </div>
                         <div className="mb-4">
@@ -93,7 +81,7 @@ const Register = () => {
                                 id="photoUrl"
                                 name="photoUrl"
                                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
-                                placeholder="your photo link" value={photoUrl} onChange={handlePhotoUrlChange} required
+                                placeholder="your photo link"   required
                             />
                         </div>
                         <button type="submit" className="w-full font-bold bg-orange-500 text-white rounded-lg py-2 px-4 hover:bg-orange-600 transition duration-300 mb-5" >

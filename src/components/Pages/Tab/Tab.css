@@ -10,26 +10,29 @@
     position: relative;
     width: 600px;
     height: 100vh;
-    background: #f1f1f1;
+    /* background: orange; */
     margin: 20px auto 0;
     word-break: break-all;
     border: 1px solid rgba(0, 0, 0, 0.274);
   }
   
-  .bloc-tabs {
+  .block-tabs {
     display: flex;
+    margin-bottom: 10px;
   }
   .tabs {
-  
     padding: 15px;
     text-align: center;
     width: 100%;
-    background: rgba(128, 128, 128, 0.075);
+    /* background: rgba(128, 128, 128, 0.075); */
+    background: orange;
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
     box-sizing: content-box;
     position: relative;
     outline: none;
+    border-radius: 10px;
+    margin-right: 5px;
   }
   .tabs:not(:last-child){
     border-right: 1px solid rgba(0, 0, 0, 0.274);
@@ -49,7 +52,7 @@
     transform: translateX(-50%);
     width: calc(100% + 2px);
     height: 5px;
-    background: rgb(88, 147, 241);
+    background: rgb(223, 95, 10);
   }
   
   
@@ -83,7 +86,11 @@
   .content p {
     width: 100%;
     height: 100%;
+    justify-content: center;
   }
   .active-content {
     display: block;
+    background: orange;
+    border-radius: 10px;
+    justify-content: center;
   }

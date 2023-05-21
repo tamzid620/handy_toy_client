@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const AllToys = () => {
+const AllToys = (id) => {
     const [alltoys, setAlltoys] = useState([]);
     const [search, setSearch] = useState("");
 
@@ -25,7 +26,7 @@ const AllToys = () => {
             </h2>
             {/* search box  */}
             <div className="mb-20 flex justify-center items-center gap-3">
-                <input onChange={(event) => setSearch(event.target.value)} type="text"className="px-5 py-2 rounded-lg"
+                <input onChange={(event) => setSearch(event.target.value)} type="text" className="px-5 py-2 rounded-lg"
                 />{" "}
                 <button onClick={handleSearch} className="btn bg-orange-500">Search</button>
             </div>
@@ -40,26 +41,29 @@ const AllToys = () => {
                                 <th></th>
                                 <th>Seller</th>
                                 <th>Toy Name</th>
+                                {/* <th>Sub-category</th> */}
                                 <th>Price</th>
                                 <th>Avaiablle Quantity</th>
                                 <th>Details</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {alltoys.map((alltoy, index) => (
-                                <tr key={alltoy._id}>
-                                    <th>{index + 1}</th>
-                                    <td>{alltoy?.seller}</td>
-                                    <td>{alltoy?.name}</td>
-                                    <td>{alltoy?.price}$</td>
-                                    <td>{alltoy?.quantity} pieces</td>
-                                    <td>
-                                        <button className="btn bg-orange-500 rounded-lg text-white font-bold">
-                                            view Details
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))}
+                            {
+                                alltoys.map((alltoy, index) => (
+                                    <tr key={alltoy._id}>
+                                        <th>{index + 1}</th>
+                                        <td>{alltoy?.seller}</td>
+                                        <td>{alltoy?.name}</td>
+                                        {/* <td>{alltoy?.categories[0]?.name}</td> */}
+                                        <td>{alltoy?.price}$</td>
+                                        <td>{alltoy?.quantity} pieces</td>
+                                        <td>
+                                            <Link to={`/atdetails/${id}`}>
+                                                <button className="btn  bg-orange-500">view details</button></Link>
+                                        </td>
+                                    </tr>
+                                ))
+                            }
                         </tbody>
                     </table>
                 </div>

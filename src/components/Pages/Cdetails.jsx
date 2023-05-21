@@ -4,20 +4,38 @@ import { useParams } from 'react-router-dom';
 const Cdetails = () => {
     const params = useParams();
 
-    const [details, setDetails] = useState({});
+const [toydata, setToydata] =useState()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/toydetails/${params.id}`)
+        fetch(`http://localhost:5000/catedetails/${params.id}`)
             .then((res) => res.json())
-            .then((data) => setDetails(data));
+            .then((data) => setToydata(data));
     }, [params]);
 
-    console.log(details);
+    console.log(toydata);
 
     return (
         <div className="text-white">
-            <h2>c detalis</h2>
-            
+            <h2 className='flex justify-center font-bold text-2xl mb-20 text-orange-400'>category detalis</h2>
+
+            {/* <div>
+                {
+                    toydata?.categories?.map((categories)=> {
+                        <div key={categories._id}>
+                            <div>
+                                <img src={categories.picture} alt="" />
+                            </div>
+                            <div>
+                                <p>{categories.name}</p>
+                                <p>{categories.price}</p>
+                                <p>{categories.rating}</p>
+                            </div>
+                        </div>
+                    })
+                }
+            </div> */}
+
+
         </div>
     );
 };

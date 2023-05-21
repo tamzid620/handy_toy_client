@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link, useLocation, useNavigate, } from "react-router-dom";
 import { FaGoogle } from 'react-icons/fa';
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, } from "firebase/auth";
@@ -10,22 +10,13 @@ const googleProvider = new GoogleAuthProvider();
 
 const Login = () => {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location);
 
   const from = location.state?.from?.pathname || "/";
 
-  //  Form Handler----------------------------------
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
+ 
 
   useEffect(() => {
     if (app) {
@@ -33,9 +24,15 @@ const Login = () => {
       });
     }
   }, [app]);
-  //  Email Password Login----------------------------------
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           const user = userCredential.user;
@@ -82,8 +79,7 @@ const Login = () => {
                 id="email"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder=" your email"
-                value={email}
-                onChange={handleEmailChange}
+                name="email"
                 required
               />
             </div>
@@ -96,8 +92,7 @@ const Login = () => {
                 id="password"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="your password"
-                value={password}
-                onChange={handlePasswordChange}
+                name="password"
                 required
               />
             </div>

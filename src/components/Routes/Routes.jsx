@@ -10,6 +10,7 @@ import MyToys from "../Pages/MyToys";
 import AddToys from "../Pages/AddToys";
 import PrivateRoute from "./PrivateRoute";
 import Cdetails from "../Pages/Cdetails";
+import Atdetails from "../Pages/Atdetails";
 
 
   const router = createBrowserRouter([
@@ -49,6 +50,10 @@ import Cdetails from "../Pages/Cdetails";
         {
           path: "/cdetails/:id",
           element:<PrivateRoute><Cdetails></Cdetails></PrivateRoute> ,
+        },
+        {
+          path: "/atdetails/:id",
+          element:<PrivateRoute><Atdetails></Atdetails></PrivateRoute> ,
         },
       ],
     },

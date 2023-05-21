@@ -8,7 +8,15 @@
     "rating": 4.5,
     "quantity": 10,
     "description": "Experience the power of the Force with this iconic lightsaber. It features realistic sound effects and lights up in different colors. Perfect for epic Jedi duels!",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://media.karousell.com/media/photos/products/2022/3/12/zd_toys_iron_man_mark_l_mk50_p_1647069384_23a4e0c0_progressive",
+        "name": "Iron Man",
+        "price": 19.99,
+        "rating": 4.5
+      }
+    ]
   },
   {
     "toy_id":"02",
@@ -19,7 +27,15 @@
     "rating": 5.0,
     "quantity": 5,
     "description": "Take control of the fastest ship in the galaxy! This highly detailed Millennium Falcon replica comes with removable panels, working lights, and sounds. It's a must-have for any Star Wars fan.",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://www.kapowtoys.co.uk/wp-content/uploads/2021/10/falcap1.jpg",
+        "name": "Captain America",
+        "price": 14.99,
+        "rating": 4.2
+      }
+    ]
   },
   {
     "toy_id":"03",
@@ -30,7 +46,15 @@
     "rating": 4.2,
     "quantity": 8,
     "description": "Embrace the dark side with this impressive Darth Vader action figure. It features multiple points of articulation, a lightsaber accessory, and a removable helmet. Join the Sith Lord in his quest for power!",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://cdn.shopify.com/s/files/1/1969/6605/products/1bc33ac6-11c8-4aa4-bd4e-40018186548a.jpg?v=1669925315&width=1920",
+        "name": "Thor",
+        "price": 24.99,
+        "rating": 4.7
+      }
+    ]
   },
   {
     "toy_id":"04",
@@ -41,7 +65,15 @@
     "rating": 4.7,
     "quantity": 3,
     "description": "Meet your new astromech droid companion, R2-D2! This interactive droid can move, make sounds, and project holographic messages, just like in the movies. It's a loyal and resourceful ally for any Star Wars adventure.",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://m.media-amazon.com/images/I/91Y8bCTzlML._AC_SL1500_.jpg",
+        "name": "Optimus Prime",
+        "price": 29.99,
+        "rating": 4.6
+      }
+    ]
   },
   {
     "toy_id":"05",
@@ -52,7 +84,15 @@
     "rating": 4.4,
     "quantity": 6,
     "description": "Build and display your own X-Wing Fighter with this detailed model kit. It includes all the necessary parts and decals for a stunning replica. May the Force be with you as you embark on this exciting construction project.",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://i5.walmartimages.ca/images/Enlarge/846/796/6000198846796.jpg",
+        "name": "Bumblebee",
+        "price": 19.99,
+        "rating": 4.4
+      }
+    ]
   },
   {
     "toy_id":"06",
@@ -63,7 +103,15 @@
     "rating": 4.6,
     "quantity": 10,
     "description": "Bring the lovable BB-8 droid to life with this app-enabled toy. Control it using your smartphone, explore holographic simulations, and embark on exciting missions in a galaxy far, far away.",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://lmb3.files.wordpress.com/2019/12/tfbbssvoymtmv-1.jpg?w=1400&h=",
+        "name": "Megatron",
+        "price": 24.99,
+        "rating": 4.3
+      }
+    ]
   },
   {
     "toy_id":"07",
@@ -74,7 +122,15 @@
     "rating": 4.4,
     "quantity": 5,
     "description": "Embrace the power of the dark side with the Kylo Ren Lightsaber. This realistic replica features a pulsating blade, movie-inspired sound effects, and a durable hilt. Join the Knights of Ren and unleash your fury!",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://cdn.shopify.com/s/files/1/1969/6605/products/1bc33ac6-11c8-4aa4-bd4e-40018186548a.jpg?v=1669925315&width=1920",
+        "name": "Thor",
+        "price": 24.99,
+        "rating": 4.7
+      }
+    ]
   },
   {
     "toy_id":"08",
@@ -85,7 +141,15 @@
     "rating": 4.8,
     "quantity": 8,
     "description": "Enlist in the Galactic Empire with this authentic Stormtrooper helmet. It features a glossy white finish, adjustable straps, and accurate details. Complete your Stormtrooper cosplay or display it as a collectible!",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://i5.walmartimages.ca/images/Enlarge/846/796/6000198846796.jpg",
+        "name": "Bumblebee",
+        "price": 19.99,
+        "rating": 4.4
+      }
+    ]
   },
   {
     "toy_id":"09",
@@ -96,7 +160,15 @@
     "rating": 4.9,
     "quantity": 15,
     "description": "Cuddle up with the adorable Baby Yoda with this soft and huggable plush toy. Inspired by the character from The Mandalorian series, it's the perfect companion for Star Wars fans of all ages.",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://media.karousell.com/media/photos/products/2022/3/12/zd_toys_iron_man_mark_l_mk50_p_1647069384_23a4e0c0_progressive",
+        "name": "Iron Man",
+        "price": 19.99,
+        "rating": 4.5
+      }
+    ]
   },
   {
     "toy_id":"10",
@@ -107,6 +179,14 @@
     "rating": 5.0,
     "quantity": 3,
     "description": "Build the iconic Millennium Falcon with this Star Wars LEGO set. It includes minifigures of your favorite characters, realistic details, and removable sections for easy access to the interior. Embark on epic space adventures!",
-    "available": true
+    "available": true,
+    "categories":[
+      {
+        "picture": "https://lmb3.files.wordpress.com/2019/12/tfbbssvoymtmv-1.jpg?w=1400&h=",
+        "name": "Megatron",
+        "price": 24.99,
+        "rating": 4.3
+      }
+    ]
   }
 ]
