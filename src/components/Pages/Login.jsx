@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate, } from "react-router-dom";
 import { FaGoogle } from 'react-icons/fa';
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, } from "firebase/auth";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify';
 import app from "../../firebase/firebase.config";
 
 const auth = getAuth();
@@ -36,21 +36,16 @@ const Login = () => {
   //  Email Password Login----------------------------------
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email && password) {
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           const user = userCredential.user;
           navigate(from, { replace: true });
+          toast.success('Login successfull!');
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          toast(errorMessage);
         });
-    } else {
-      toast("Please Fill Email Field And Password");
-      return;
-    }
   };
   //  Google Login ----------------------------------
   const googleLogin = () => {

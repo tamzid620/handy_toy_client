@@ -48,14 +48,14 @@ const MyToys = () => {
 //   const handleDelete = (id )=> {
 //     fetch(`http://localhost:5000/deletetoy/${id}`,{
 //         method:'DELETE',
-
+    
 //     })
 //     .then(res => res.json())
 //     .then(data => {
 //         console.log(data);
 //         if(data.deleteCount > 0 ){
 //             alert('deleted seccessful');
-//             const remaining = mytoys.filter(mytoys => mytoys._id !==id);
+//             const remaining = mytoys.filter(mytoy => mytoy._id !==id);
 //             setMytoys(remaining)
 //         }
 //     })
@@ -126,7 +126,7 @@ const MyToys = () => {
                     </div>
                   </td>
                   <td>
-                    <button  className="btn bg-orange-500 rounded-lg text-white font-bold">Delete</button>
+                    <button   className="btn bg-orange-500 rounded-lg text-white font-bold">Delete</button>
                   </td>
                 </tr>
               ))}
