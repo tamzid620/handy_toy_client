@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
+import Rating from "react-rating";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 
 const Cdetails = () => {
     const params = useParams();
-
     const [toydata, setToydata] = useState([])
     useTitle('Subcategory Details')
 
@@ -24,11 +27,22 @@ const Cdetails = () => {
                     </div>
                     <div className=' ms-5'>
                         <p className='font-bold text-3xl'> Name: {toydata?.name}</p>
-                        <p className='text-orange-400 font-semibold text-2xl'> price :{toydata?.price}</p>
-                        <p  className='text-orange-400 font-semibold text-xl'>rating: {toydata?.rating}</p>
-                        <p  className='text-orange-400 font-semibold text-sm'>description:{toydata?.description}</p>
+                        <p className='text-orange-400 font-semibold text-2xl'> price :{toydata?.price} $</p>
+                        <p className='text-orange-400 font-semibold text-xl'>rating: {toydata?.rating}
+                            <Rating className='ms-3'
+                                placeholderRating={3.5}
+                                emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
+                                placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
+                                fullSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'yellow' }} />}
+                                readonly
+                            />
+                        </p>
+                        <p className='text-orange-400 font-semibold text-sm'>description:{toydata?.description}</p>
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-center">
+                <Link className='px-8 py-3 font-semibold rounded bg-orange-400 mt-5 text-black' to='/'>Back to homepage</Link>
             </div>
 
 

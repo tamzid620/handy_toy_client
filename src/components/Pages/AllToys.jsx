@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useTitle from "../../hooks/useTitle";
 
-const AllToys = (id) => {
+const AllToys = () => {
     const [alltoys, setAlltoys] = useState([]);
     const [search, setSearch] = useState("");
     useTitle('All Toys')
@@ -60,7 +60,7 @@ const AllToys = (id) => {
                                         <td>{alltoy?.price}$</td>
                                         <td>{alltoy?.quantity} pieces</td>
                                         <td>
-                                            <Link to={`/atdetails/${id}`}>
+                                            <Link to={`/atdetails/${alltoy._id}`}>
                                                 <button className="btn  bg-orange-500">view details</button></Link>
                                         </td>
                                     </tr>

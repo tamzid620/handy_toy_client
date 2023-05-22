@@ -4,9 +4,12 @@ import storeCart2 from '../../../public/store2.jpg'
 import storeCart3 from '../../../public/store3.jpg'
 import useTitle from '../../hooks/useTitle';
 import Tab from '../Pages/Tab/Tab';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
     useTitle('Home')
+    Aos.init();
 
     return (
         <div>
@@ -29,11 +32,11 @@ const Home = () => {
             </div>
 
             {/* shop by  category  */}
-            <div className='container mx-auto mb-48'>
+            <div className='container mx-auto mb-48' data-aos="fade-down">
                 <Tab></Tab>
             </div>
             {/* OUR LATEST NEWS  */}
-            <div className='container mx-auto'>
+            <div className='container mx-auto' data-aos="fade-down">
                 <div>
                     <div className="">
                         <h1 className="flex justify-center text-orange-400 mb-5 text-4xl font-bold">OUR LATEST NEWS</h1>
@@ -91,7 +94,7 @@ const Home = () => {
             </div>
 
             {/* Our Gallery  */}
-            <div className=' mt-20 mb-20'>
+            <div className=' mt-20 mb-20' data-aos="fade-down">
                 <h1 className="text-4xl font-bold flex justify-center text-orange-400 mb-5">OUR SPECIAL GALLERY</h1>
                 <div className='flex justify-center  mb-5'>
                     <div className='grid md:grid-cols-4 gap-5 sm:grid-cols-2'>
@@ -144,7 +147,7 @@ const Home = () => {
             </div>
 
             {/* About ----------------------- */}
-            <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto bg-orange-200 p-5 rounded-3xl'>
+            <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 mt-10 container mx-auto bg-orange-200 p-5 rounded-3xl' data-aos="fade-down">
                 <div>
                     <img className='rounded-xl' src={banner} alt="" />
                 </div>
@@ -157,7 +160,7 @@ const Home = () => {
             </div>
 
             {/* New Letter  */}
-            <div className='container mx-auto bg-orange-200 rounded-xl p-20'>
+            <div className='container mx-auto bg-orange-200 rounded-xl p-20' data-aos="fade-right">
                 <h2 className="text-4xl font-bold text-orange-400 flex justify-center">SIGN UP NEWSLETTER</h2>
                 <p className='text-gray-400 flex justify-center text-center mb-3'>Subscribe to get more special Deals, <br />
                     Events & Promotions</p>

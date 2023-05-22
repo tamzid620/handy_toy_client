@@ -57,7 +57,7 @@ const Tab = () => {
                                         <h2 className="card-title">• Item name: {subcategories[0]?.categories[0]?.name}</h2> 
                                         <p>• Price: {subcategories[0]?.categories[0]?.price}</p>
                                         <p>• Rating: {subcategories[0]?.categories[0]?.rating}
-                                            <Rating
+                                            <Rating className='ms-3'
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
                                                 placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
@@ -77,7 +77,7 @@ const Tab = () => {
                                         <h2 className="card-title">• Item name: {subcategories[1]?.categories[0]?.name}</h2>
                                         <p>• Price: {subcategories[1]?.categories[0]?.price}</p>
                                         <p>• Rating: {subcategories[1]?.categories[0]?.rating}
-                                            <Rating
+                                            <Rating className='ms-3'
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
                                                 placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
@@ -107,7 +107,7 @@ const Tab = () => {
                                         <h2 className="card-title">• Item name: {subcategories[2]?.categories[0]?.name}</h2>
                                         <p>• Price: {subcategories[2]?.categories[0]?.price}</p>
                                         <p>• Rating: {subcategories[2]?.categories[0]?.rating}
-                                            <Rating
+                                            <Rating className='ms-3'
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
                                                 placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
@@ -127,7 +127,7 @@ const Tab = () => {
                                         <h2 className="card-title">• Item name: {subcategories[3]?.categories[0]?.name}</h2>
                                         <p>• Price: {subcategories[3]?.categories[0]?.price}</p>
                                         <p>• Rating: {subcategories[3]?.categories[0]?.rating}
-                                            <Rating
+                                            <Rating className='ms-3'
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
                                                 placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
@@ -156,7 +156,7 @@ const Tab = () => {
                                         <h2 className="card-title">• Item name: {subcategories[4]?.categories[0]?.name}</h2>
                                         <p>• Price: {subcategories[4]?.categories[0]?.price}</p>
                                         <p>• Rating: {subcategories[4]?.categories[0]?.rating}
-                                            <Rating
+                                            <Rating className='ms-3'
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
                                                 placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
@@ -176,7 +176,7 @@ const Tab = () => {
                                         <h2 className="card-title">• Item name: {subcategories[5]?.categories[0]?.name}</h2>
                                         <p>• Price: {subcategories[5]?.categories[0]?.price}</p>
                                         <p>• Rating: {subcategories[5]?.categories[0]?.rating}
-                                            <Rating
+                                            <Rating className='ms-3'
                                                 placeholderRating={3.5}
                                                 emptySymbol={<FontAwesomeIcon icon={farStar} className="icon" style={{ color: 'grey' }} />}
                                                 placeholderSymbol={<FontAwesomeIcon icon={fasStar} className="icon" style={{ color: 'gold' }} />}
