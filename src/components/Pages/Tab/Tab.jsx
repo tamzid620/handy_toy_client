@@ -6,7 +6,7 @@ import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-const Tab = (id) => {
+const Tab = () => {
     const [toggleState, setToggleState] = useState(1);
     const [subcategories, setSubcategories] = useState([]);
 
@@ -66,7 +66,7 @@ const Tab = (id) => {
                                             />
                                         </p>
                                         <div className="card-actions justify-end">
-                                            <Link to={`/cdetails/${id}`}>
+                                            <Link to={`/cdetails/${subcategories[0]?._id}`}>
                                                 <button className="btn  bg-orange-500">view details</button></Link>
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@ const Tab = (id) => {
                                         </p>
 
                                         <div className="card-actions justify-end">
-                                            <Link to={`/cdetails/${id}`}>
+                                            <Link to={`/cdetails/${subcategories[1]?._id}`}>
                                                 <button className="btn  bg-orange-500">view details</button></Link>
                                         </div>
                                     </div>
@@ -116,7 +116,7 @@ const Tab = (id) => {
                                             />
                                         </p>
                                         <div className="card-actions justify-end">
-                                            <Link to={`/cdetails/${id}`}>
+                                            <Link to={`/cdetails/${subcategories[2]?._id}`}>
                                                 <button className="btn  bg-orange-500">view details</button></Link>
                                         </div>
                                     </div>
@@ -136,7 +136,7 @@ const Tab = (id) => {
                                             />
                                         </p>
                                         <div className="card-actions justify-end">
-                                            <Link to={`/cdetails/${id}`}>
+                                            <Link to={`/cdetails/${subcategories[3]?._id}`}>
                                                 <button className="btn  bg-orange-500">view details</button></Link>
                                         </div>
                                     </div>
@@ -165,7 +165,7 @@ const Tab = (id) => {
                                             />
                                         </p>
                                         <div className="card-actions justify-end">
-                                            <Link to={`/cdetails/${id}`}>
+                                            <Link to={`/cdetails/${subcategories[4]?._id}`}>
                                                 <button className="btn  bg-orange-500">view details</button></Link>
                                         </div>
                                     </div>
@@ -185,7 +185,7 @@ const Tab = (id) => {
                                             />
                                         </p>
                                         <div className="card-actions justify-end">
-                                            <Link to={`/cdetails/${id}`}>
+                                            <Link to={`/cdetails/${subcategories[5]?._id}`}>
                                                 <button className="btn  bg-orange-500">view details</button></Link>
                                         </div>
                                     </div>
