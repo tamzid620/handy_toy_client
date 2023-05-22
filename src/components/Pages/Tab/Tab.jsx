@@ -55,7 +55,7 @@ const Tab = () => {
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[0]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {subcategories[0]?.categories[0]?.name}</h2> 
-                                        <p>• Price: {subcategories[0]?.categories[0]?.price}</p>
+                                        <p>• Price: {subcategories[0]?.categories[0]?.price} $ </p>
                                         <p>• Rating: {subcategories[0]?.categories[0]?.rating}
                                             <Rating className='ms-3'
                                                 placeholderRating={3.5}
@@ -75,7 +75,7 @@ const Tab = () => {
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[1]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {subcategories[1]?.categories[0]?.name}</h2>
-                                        <p>• Price: {subcategories[1]?.categories[0]?.price}</p>
+                                        <p>• Price: {subcategories[1]?.categories[0]?.price} $</p>
                                         <p>• Rating: {subcategories[1]?.categories[0]?.rating}
                                             <Rating className='ms-3'
                                                 placeholderRating={3.5}
@@ -105,7 +105,7 @@ const Tab = () => {
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[2]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {subcategories[2]?.categories[0]?.name}</h2>
-                                        <p>• Price: {subcategories[2]?.categories[0]?.price}</p>
+                                        <p>• Price: {subcategories[2]?.categories[0]?.price} $</p>
                                         <p>• Rating: {subcategories[2]?.categories[0]?.rating}
                                             <Rating className='ms-3'
                                                 placeholderRating={3.5}
@@ -125,7 +125,7 @@ const Tab = () => {
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[3]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {subcategories[3]?.categories[0]?.name}</h2>
-                                        <p>• Price: {subcategories[3]?.categories[0]?.price}</p>
+                                        <p>• Price: {subcategories[3]?.categories[0]?.price} $</p>
                                         <p>• Rating: {subcategories[3]?.categories[0]?.rating}
                                             <Rating className='ms-3'
                                                 placeholderRating={3.5}
@@ -154,7 +154,7 @@ const Tab = () => {
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[4]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {subcategories[4]?.categories[0]?.name}</h2>
-                                        <p>• Price: {subcategories[4]?.categories[0]?.price}</p>
+                                        <p>• Price: {subcategories[4]?.categories[0]?.price} $</p>
                                         <p>• Rating: {subcategories[4]?.categories[0]?.rating}
                                             <Rating className='ms-3'
                                                 placeholderRating={3.5}
@@ -174,7 +174,7 @@ const Tab = () => {
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[5]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {subcategories[5]?.categories[0]?.name}</h2>
-                                        <p>• Price: {subcategories[5]?.categories[0]?.price}</p>
+                                        <p>• Price: {subcategories[5]?.categories[0]?.price} $</p>
                                         <p>• Rating: {subcategories[5]?.categories[0]?.rating}
                                             <Rating className='ms-3'
                                                 placeholderRating={3.5}

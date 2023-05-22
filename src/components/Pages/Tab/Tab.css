@@ -10,7 +10,6 @@
     position: relative;
     width: 600px;
     height: 100vh;
-    /* background: orange; */
     margin: 20px auto 0;
     word-break: break-all;
     border: 1px solid rgba(0, 0, 0, 0.274);
@@ -24,18 +23,17 @@
     padding: 15px;
     text-align: center;
     width: 100%;
-    /* background: rgba(128, 128, 128, 0.075); */
     background: orange;
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-    box-sizing: content-box;
     position: relative;
     outline: none;
     border-radius: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .tabs:not(:last-child){
     border-right: 1px solid rgba(0, 0, 0, 0.274);
+    
   }
   
   .active-tabs  {
@@ -74,23 +72,8 @@
     height: 100%;
     display: none;
   }
-  .content h2 {
-    padding: 0px 0 5px 0px;
-  }
-  .content hr {
-    width: 100px;
-    height: 2px;
-    background: #222;
-    margin-bottom: 5px;
-  }
-  .content p {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-  }
   .active-content {
     display: block;
     background: orange;
     border-radius: 10px;
-    justify-content: center;
   }

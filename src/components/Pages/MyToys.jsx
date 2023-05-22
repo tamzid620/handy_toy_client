@@ -23,6 +23,7 @@ const MyToys = () => {
         console.error(error);
       });
   }, [user , control]);
+  console.log(mytoys)
 
   const updateToyInformation = (data) => {
     fetch(`https://handy-toy-store-server.vercel.app/updatetoy/${data.id}`, {

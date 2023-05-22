@@ -43,7 +43,7 @@ const AllToys = () => {
                                 <th></th>
                                 <th>Seller</th>
                                 <th>Toy Name</th>
-                                {/* <th>Sub-category</th> */}
+                                <th>Sub-category</th>
                                 <th>Price</th>
                                 <th>Avaiablle Quantity</th>
                                 <th>Details</th>
@@ -56,7 +56,7 @@ const AllToys = () => {
                                         <th>{index + 1}</th>
                                         <td>{alltoy?.seller}</td>
                                         <td>{alltoy?.name}</td>
-                                        {/* <td>{alltoy?.categories[0]?.name}</td> */}
+                                        <td>{alltoy?.subCategory}</td>
                                         <td>{alltoy?.price}$</td>
                                         <td>{alltoy?.quantity} pieces</td>
                                         <td>

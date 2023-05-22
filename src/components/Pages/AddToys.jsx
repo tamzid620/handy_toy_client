@@ -4,8 +4,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import useTitle from "../../hooks/useTitle";
 
 const AddToys = () => {
-  const {register, formState: { errors }, handleSubmit } = useForm();
+  const { register, formState: { errors }, handleSubmit } = useForm();
   useTitle('Add Toys')
+
 
   const onSubmit = (data) => {
     fetch('https://handy-toy-store-server.vercel.app/addToys', {
@@ -50,6 +51,14 @@ const AddToys = () => {
               {...register("email", { required: "Email Address is required" })}
               aria-invalid={errors.email ? "true" : "false"}
             />
+
+            <select className="text-input me-2 p-3 mb-2 rounded-lg" {...register("subCategory" , {required:"select one"})}>
+              <option value="Avengers">Avengers</option>
+              <option value="DC">DC</option>
+              <option value="Transformers">Transformers</option>
+              <option value="StarWars">StarWars</option>
+            </select>
+
             {errors.email && <p role="alert">{errors.email?.message}</p>}
           </div>
           <div className="flex justify-center">
