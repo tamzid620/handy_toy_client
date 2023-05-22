@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 // import lottie from "../../../../public/errorpage.gif"
 import lottie from "../../../../public/404.png"
+import useTitle from "../../../hooks/useTitle";
 
 const ErrorPage = () => {
+    useTitle('Error Found')
     return (
         <div>
             <div className="flex justify-center items-center mb-10">

@@ -11,7 +11,7 @@ const Tab = (id) => {
     const [subcategories, setSubcategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allToys')
+        fetch('https://handy-toy-store-server.vercel.app/allToys')
             .then(res => res.json())
             .then(data => setSubcategories(data))
     }, [])

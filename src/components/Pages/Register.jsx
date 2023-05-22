@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, updateProfile, } from "firebase/auth";
+import useTitle from "../../hooks/useTitle";
 
 
 const auth = getAuth();
 
 const Register = () => {
+    useTitle('Register')
 
 
     const handleSubmit = (event) => {

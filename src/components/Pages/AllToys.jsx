@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 const AllToys = (id) => {
     const [alltoys, setAlltoys] = useState([]);
     const [search, setSearch] = useState("");
+    useTitle('All Toys')
 
     useEffect(() => {
-        fetch("http://localhost:5000/allToys")
+        fetch("https://handy-toy-store-server.vercel.app/allToys")
             .then((res) => res.json())
             .then((data) => setAlltoys(data))
             .catch((error) => console.error("Error fetching all toys:", error));
     }, []);
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/toysearch/${search}`)
+        fetch(`https://handy-toy-store-server.vercel.app/toysearch/${search}`)
             .then((res) => res.json())
             .then((data) => setAlltoys(data))
             .catch((error) => console.error("Error searching toys:", error));

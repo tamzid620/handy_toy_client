@@ -4,6 +4,7 @@ import { FaGoogle } from 'react-icons/fa';
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, } from "firebase/auth";
 import { ToastContainer, toast } from 'react-toastify';
 import app from "../../firebase/firebase.config";
+import useTitle from "../../hooks/useTitle";
 
 const auth = getAuth();
 const googleProvider = new GoogleAuthProvider();
@@ -12,6 +13,7 @@ const Login = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
+  useTitle('Login')
   console.log(location);
 
   const from = location.state?.from?.pathname || "/";

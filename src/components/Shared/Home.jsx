@@ -2,9 +2,11 @@ import banner from '../../../public/starwar.jpg'
 import storeCart1 from '../../../public/store1.jpg'
 import storeCart2 from '../../../public/store2.jpg'
 import storeCart3 from '../../../public/store3.jpg'
+import useTitle from '../../hooks/useTitle';
 import Tab from '../Pages/Tab/Tab';
 
 const Home = () => {
+    useTitle('Home')
 
     return (
         <div>
@@ -17,7 +19,7 @@ const Home = () => {
                 width: "100vw",
                 height: "100vh"
             }}>
-                <div className='min-h-screen flex justify-center items-center bg-black bg-opacity-75'>
+                <div className='min-h-screen flex justify-center items-center bg-gray-900 bg-opacity-75'>
                     <div className='w-full'>
                         <h1 className=' flex justify-center font-bold text-4xl text-orange-400'>WELCOME TO HANDY TOY STORE</h1>
                         <p className='text-gray-400 font-semibold text-center mt-5'>Explore our carefully curated categories and discover a world of possibilities. <br /> Delve into the realm of plush toys, where cuddly companions await, ready to be cherished and loved. </p>
@@ -148,7 +150,7 @@ const Home = () => {
                 </div>
                 <div className='flex items-center'>
                     <div>
-                        <h2 className='font-bold text-4xl text-orange-400'>Handle Toy Store</h2>
+                        <h2 className='font-bold text-4xl text-orange-400'>Handy Toy Store</h2>
                         <p className=' font-semibold text-lg'>Welcome to our Toy Store! Step into a world of imagination and play where joy knows no bounds. Discover a treasure trove of toys that will ignite the imagination of children of all ages. From classic favorites to the latest trends, we offer a wide selection of toys that will bring smiles, laughter, and unforgettable memories. Whether youre searching for the perfect gift, planning a birthday party, or simply indulging in a playful adventure, our Toy Store is your ultimate destination. Come and explore a world of wonder, where dreams come true and imagination takes flight!</p>
                     </div>
                 </div>

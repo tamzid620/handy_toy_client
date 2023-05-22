@@ -1,19 +1,22 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
+
 
 const Atdetails = () => {
 
     const params = useParams();
+    useTitle('AllToys Details')
 
-    const [details, setDetails] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/alltoydetails/${params.id}`)
+        fetch(`https://handy-toy-store-server.vercel.app/alltoydetails/${params.id}`,{
+            method:"GET"
+        })
             .then((res) => res.json())
-            .then((data) => setDetails(data));
-    }, [params]);
+            .then((data) => console.log(data));
+    }, [params.id]);
 
-    console.log(details);
 
     return (
         <div className="text-white">
