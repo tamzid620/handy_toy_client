@@ -1,7 +1,7 @@
-import banner from '../../../public/starwar.jpg'
 import storeCart1 from '../../../public/store1.jpg'
 import storeCart2 from '../../../public/store2.jpg'
 import storeCart3 from '../../../public/store3.jpg'
+import banner from "../../../public/banner/banner.jpg"
 import useTitle from '../../hooks/useTitle';
 import Tab from '../Pages/Tab/Tab';
 import Aos from 'aos'
@@ -14,8 +14,8 @@ const Home = () => {
     return (
         <div>
             {/* Banner ----------------------- */}
-            <div className='container mx-auto rounded-xl mt-10  mb-10' style={{
-                backgroundImage: 'url("../../../public/carousel1.jpg")',
+            <div className='container mx-auto rounded-xl mt-10  mb-10'  style={{
+                backgroundImage: `url(${banner})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",

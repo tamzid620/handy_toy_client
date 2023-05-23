@@ -13,8 +13,11 @@ const MyToys = () => {
   const [control, setControl] = useState(false);
   useTitle('My Toys')
 
+
   useEffect(() => {
-    fetch(`https://handy-toy-store-server.vercel.app/myToys/${user?.email}`)
+    fetch(`https://handy-toy-store-server.vercel.app/myToys/${user?.email}`, {
+      method: "GET",
+    })
       .then(res => res.json())
       .then(data => {
         setMytoys(data);
@@ -23,7 +26,6 @@ const MyToys = () => {
         console.error(error);
       });
   }, [user , control]);
-  console.log(mytoys)
 
   const updateToyInformation = (data) => {
     fetch(`https://handy-toy-store-server.vercel.app/updatetoy/${data.id}`, {
