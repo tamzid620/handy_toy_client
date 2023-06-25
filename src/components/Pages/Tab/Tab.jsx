@@ -23,7 +23,7 @@ const Tab = () => {
     return (
         <div>
             <h1 className="text-4xl mb-5 font-bold flex justify-center text-orange-500">SHOP BY CATEGORY</h1>
-            <div className="snapboxer mx-auto sm:w-[370px]">
+            <div className="snapboxer mx-auto sm:w-[370px] ">
 
                 <div className="block-snaps grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:gap-20">
                     <div>
