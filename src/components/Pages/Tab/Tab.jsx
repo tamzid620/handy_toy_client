@@ -22,36 +22,29 @@ const Tab = () => {
 
     return (
         <div className='mb-10'>
-            <h1 className="text-4xl font-bold flex justify-center text-orange-500">SHOP BY CATEGORY</h1>
-            <div className="tabContainer">
+            <h1 className="text-4xl mb-5 font-bold flex justify-center text-orange-500">SHOP BY CATEGORY</h1>
+            <div className="tabContainer sm:w-[370px]">
 
-                <div className="block-tabs">
-                    <button
-                        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(1)}
-                    >
-                        Sub_Category_1
-                    </button>
-                    <button
-                        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(2)}
-                    >
-                        Sub_Category_2
-                    </button>
-                    <button
-                        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(3)}
-                    >
-                        Sub_Category_3
-                    </button>
+                <div className="block-tabs grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:gap-20">
+                    <div>
+                    <button className= {toggleState === 1 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(1)}>Sub_Category_1</button>
+                    </div>
+                    <div>
+                    <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(2)}>Sub_Category_2</button>
+                    </div>
+                    <div>
+                    <button className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(3)}>Sub_Category_3</button>
+                    </div>
                 </div>
 
-                <div className="content-tabs">
-                    <div className={toggleState === 1 ? "content  active-content" : "content"}>
-
-                        <div className='flex justify-center'>
-                            <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 '>
-                                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="content-tabs lg:ml-[-160px] sm:w-[365px] lg:w-max">
+                    <div className={toggleState === 1 ? "content  active-content sm:w-[365px] lg:w-full" : "content "}>
+                        <div className='flex justify-center '>
+                            <div className='grid md:grid-cols-2 sm:grid-cols-1  gap-4 '>
+                                <div className="card lg:w-96 bg-base-100 shadow-xl sm:w-72">
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[0]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">• Item name: {subcategories[0]?.categories[0]?.name}</h2> 
@@ -94,13 +87,11 @@ const Tab = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
-                    <div className={toggleState === 2 ? "content  active-content" : "content"}>
-
+                    <div className={toggleState === 2 ? "content  active-content sm:w-[365px] lg:w-full" : "content"}>
                         <div className='flex justify-center'>
-                            <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 '>
+                            <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl">
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[2]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
@@ -143,13 +134,11 @@ const Tab = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
-                    <div className={toggleState === 3 ? "content  active-content" : "content"}>
-
+                    <div className={toggleState === 3 ? "content  active-content sm:w-[365px] lg:w-full" : "content"}>
                         <div className='flex justify-center'>
-                            <div className='grid md:grid-cols-2 sm:grid-cols-1 mb-20 gap-4 '>
+                            <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl mb-10">
                                     <figure><img style={{ width: "300px", height: "250px" }} src={subcategories[4]?.categories[0]?.picture} alt="Shoes" /></figure>
                                     <div className="card-body">
@@ -192,7 +181,6 @@ const Tab = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

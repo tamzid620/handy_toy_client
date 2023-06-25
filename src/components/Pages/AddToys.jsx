@@ -2,8 +2,12 @@ import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useTitle from "../../hooks/useTitle";
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
+
 
 const AddToys = () => {
+  const {user} = useContext(AuthContext)
   const { register, formState: { errors }, handleSubmit } = useForm();
   useTitle('Add Toys')
 
@@ -47,7 +51,7 @@ const AddToys = () => {
             />
             <input
               className="me-2 p-3 mb-2 rounded-lg"
-              placeholder="your email"
+              placeholder={` ${user.email}`}
               {...register("email", { required: "Email Address is required" })}
               aria-invalid={errors.email ? "true" : "false"}
             />

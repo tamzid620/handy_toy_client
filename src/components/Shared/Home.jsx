@@ -32,13 +32,15 @@ const Home = () => {
             </div>
 
             {/* shop by  category  */}
-            <div className='container mx-auto mb-48' data-aos="fade-down">
+            {/* <div className='container mx-auto' data-aos="fade-down"> */}
+            <div className='container mx-auto mt-20' >
                 <Tab></Tab>
             </div>
             {/* OUR LATEST NEWS  */}
-            <div className='container mx-auto' data-aos="fade-down">
+            {/* <div className='container mx-auto' data-aos="fade-down"> */}
+            <div className='container mx-auto'>
                 <div>
-                    <div className="">
+                    <div>
                         <h1 className="flex justify-center text-orange-400 mb-5 text-4xl font-bold">OUR LATEST NEWS</h1>
                         <div className='flex justify-center'>
                             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
