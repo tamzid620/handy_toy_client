@@ -24,7 +24,7 @@ const Home = () => {
             }}>
                 <div className='min-h-screen flex justify-center items-center bg-gray-900 bg-opacity-75'>
                     <div className='w-full'>
-                        <h1 className=' flex justify-center font-bold text-4xl text-orange-400'>WELCOME TO HANDY TOY STORE</h1>
+                        <h1 className=' flex justify-center text-center font-bold text-4xl text-orange-400'>WELCOME TO HANDY TOY STORE</h1>
                         <p className='text-gray-400 font-semibold text-center mt-5'>Explore our carefully curated categories and discover a world of possibilities. <br /> Delve into the realm of plush toys, where cuddly companions await, ready to be cherished and loved. </p>
                     </div>
                 </div>
@@ -32,15 +32,14 @@ const Home = () => {
             </div>
 
             {/* shop by  category  */}
-            {/* <div className='container mx-auto' data-aos="fade-down"> */}
-            <div className='container mx-auto mt-20' >
+            <div className='container mx-auto' data-aos="fade-down">
                 <Tab></Tab>
             </div>
+
             {/* OUR LATEST NEWS  */}
-            {/* <div className='container mx-auto' data-aos="fade-down"> */}
-            <div className='container mx-auto'>
-                <div >
-                    <div>
+            <div className='container mx-auto' data-aos="fade-down">
+                <div>
+                    <div className=''>
                         <h1 className="flex justify-center text-orange-400 mb-5 text-4xl font-bold">OUR LATEST NEWS</h1>
                         <div className='flex justify-center'>
                             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
@@ -97,7 +96,7 @@ const Home = () => {
 
             {/* Our Gallery  */}
             <div className=' mt-20 mb-20' data-aos="fade-down">
-                <h1 className="text-4xl font-bold flex justify-center text-orange-400 mb-5">OUR SPECIAL GALLERY</h1>
+                <h1 className="text-4xl font-bold flex justify-center text-center text-orange-400 mb-5">OUR SPECIAL GALLERY</h1>
                 <div className='flex justify-center  mb-5'>
                     <div className='grid md:grid-cols-4 gap-5 sm:grid-cols-2'>
                         <div>
@@ -163,7 +162,7 @@ const Home = () => {
 
             {/* New Letter  */}
             <div className='container mx-auto bg-orange-200 rounded-xl p-20' data-aos="fade-right">
-                <h2 className="text-4xl font-bold text-orange-400 flex justify-center">SIGN UP NEWSLETTER</h2>
+                <h2 className="text-4xl font-bold text-orange-400 flex justify-center text-center">SIGN UP NEWSLETTER</h2>
                 <p className='text-gray-400 flex justify-center text-center mb-3'>Subscribe to get more special Deals, <br />
                     Events & Promotions</p>
                 <div className='flex justify-center gap-5'>

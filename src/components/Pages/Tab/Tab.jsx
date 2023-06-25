@@ -21,27 +21,27 @@ const Tab = () => {
     };
 
     return (
-        <div className='mb-10'>
+        <div>
             <h1 className="text-4xl mb-5 font-bold flex justify-center text-orange-500">SHOP BY CATEGORY</h1>
-            <div className="tabContainer sm:w-[370px]">
+            <div className="snapboxer mx-auto sm:w-[370px]">
 
-                <div className="block-tabs grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:gap-20">
+                <div className="block-snaps grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:gap-20">
                     <div>
-                    <button className= {toggleState === 1 ? "tabs active-tabs" : "tabs"}
+                    <button className= {toggleState === 1 ? "snaps active-snaps" : "snaps"}
                         onClick={() => toggleTab(1)}>Sub_Category_1</button>
                     </div>
                     <div>
-                    <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+                    <button className={toggleState === 2 ? "snaps active-snaps" : "snaps"}
                         onClick={() => toggleTab(2)}>Sub_Category_2</button>
                     </div>
                     <div>
-                    <button className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+                    <button className={toggleState === 3 ? "snaps active-snaps" : "snaps"}
                         onClick={() => toggleTab(3)}>Sub_Category_3</button>
                     </div>
                 </div>
 
-                <div className="content-tabs lg:ml-[-160px] sm:w-[365px] lg:w-max">
-                    <div className={toggleState === 1 ? "content  active-content sm:w-[365px] lg:w-full" : "content "}>
+                <div className="box-snaps lg:ml-[-160px] sm:w-[365px] lg:w-max">
+                    <div className={toggleState === 1 ? "contentbox  active-box sm:w-[365px] lg:w-full" : "box "}>
                         <div className='flex justify-center '>
                             <div className='grid md:grid-cols-2 sm:grid-cols-1  gap-4 '>
                                 <div className="card lg:w-96 bg-base-100 shadow-xl sm:w-72">
@@ -89,7 +89,7 @@ const Tab = () => {
                         </div>
                     </div>
 
-                    <div className={toggleState === 2 ? "content  active-content sm:w-[365px] lg:w-full" : "content"}>
+                    <div className={toggleState === 2 ? "box  active-box sm:w-[365px] lg:w-full" : "box"}>
                         <div className='flex justify-center'>
                             <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl">
@@ -136,7 +136,7 @@ const Tab = () => {
                         </div>
                     </div>
 
-                    <div className={toggleState === 3 ? "content  active-content sm:w-[365px] lg:w-full" : "content"}>
+                    <div className={toggleState === 3 ? "box  active-box sm:w-[365px] lg:w-full" : "box"}>
                         <div className='flex justify-center'>
                             <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl mb-10">
