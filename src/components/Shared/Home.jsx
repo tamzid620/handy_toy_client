@@ -32,16 +32,16 @@ const Home = () => {
             </div>
 
             {/* shop by  category  */}
-            <div className='container mx-auto' data-aos="fade-down">
+            <div className='container mx-auto relative sm: mb-96 lg:mb-10' data-aos="fade-down">
                 <Tab></Tab>
             </div>
 
             {/* OUR LATEST NEWS  */}
-            <div className='container mx-auto' data-aos="fade-down">
+            <div className='container mx-auto relative sm: pt-24 lg:mt-28' data-aos="fade-down">
                 <div>
                     <div>
                         <h1 className="flex justify-center text-orange-400 mb-5 text-4xl font-bold">OUR LATEST NEWS</h1>
-                        <div className='flex justify-center'>
+                        <div className='flex justify-center '>
                             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 '>
                                 <div className="card w-96 bg-base-100 shadow-xl">
                                     <figure><img src={storeCart2} alt="store" /></figure>

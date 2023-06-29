@@ -7,9 +7,7 @@
   .snapboxer {
     display: flex;
     flex-direction: column;
-    /* width: 500px; */
     height: 100vh;
-    /* margin: auto; */
     margin-bottom: 10px;
     border: 1px solid rgba(0, 0, 0, 0.274);
   }
@@ -20,7 +18,6 @@
   .snaps {
     padding: 15px;
     text-align: center;
-    /* width: 100%; */
     background: orange;
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
@@ -28,7 +25,6 @@
     outline: none;
     border-radius: 10px;
     margin-right: 10px;
-    /* margin-bottom: 30px; */
   }
   .snaps:not(:last-child){
     border-right: 1px solid rgba(0, 0, 0, 0.274);
